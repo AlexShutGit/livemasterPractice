@@ -1,0 +1,17 @@
+{
+    "name": "html_css",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "node-sass": "^7.0.0",
+        "nodemon": "^3.0.1"
+    },
+    "scripts": {
+        "compile:sass": "node-sass scss/ -o static/css",
+        "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+    },
+    "author": "",
+    "license": "ISC"
+}
