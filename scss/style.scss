@@ -110,6 +110,100 @@ body {
 
 }
 
+.reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #DFF6FE;
+    align-items: center
+;
+
+    .reviews__head {
+        font-size: 34px;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reviews__slider-box {
+
+        .reviews__slider-box-arrow {
+            display: none;
+        }
+
+        .reviews__slider {
+        background-color: white;
+        margin: 0px 20px 0px 20px;
+        border-radius: 10px;
+        height: 480px;
+
+        .reviews__slider-bar-head-img-big {
+            display: none;
+        }
+        
+        .reviews__slider-bar-box {
+
+            .reviews__slider-bar-head {
+            display: flex;
+            margin: 12px 20px 12px 20px;
+            padding-top: 6px;
+
+            .reviews__slider-bar-head-img {
+                border-radius: 50px;
+            }
+
+            .reviews__slider-bar-head-text {
+                margin-left: 16px;
+                padding-right: 21px;
+
+                .reviews__slider-bar-head-text-name {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin: 0px 0px 10px 0px;
+                }
+
+                .reviews__slider-bar-head-text-discription {
+                    color: grey;
+                }
+        }
+        
+            }
+        }
+
+        .reviews__slider-bar-main {
+            margin: 15px 20px;
+            font-size: 17px;
+            font-weight: 400;
+
+            .reviews__slider-bar-main-text {
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    .slider-hide {
+            display: none;
+        }
+
+    }
+    
+    
+    .reviews__slider-bar-checkboxes {
+        margin: 20px 20px;
+        display: flex;
+        gap: 20px;
+
+        .reviews__slider-bar-checkboxes-circle {
+            width: 10px;
+            height: 10px;
+            background-color: #1F83F9;
+            border-radius: 20px;
+        }
+    }
+}
+
+ 
 @media screen and (min-width:769px) {
 
 body {
@@ -236,5 +330,110 @@ body {
 
 }
 
+    .reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #DFF6FE;
+    align-items: center;
+
+    .reviews__head {
+        font-size: 34px;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reviews__slider-box {
+
+        display: flex;
+        align-items: center;
+        width: 79vw;
+        min-width: 1100px;
+
+        .reviews__slider-box-arrow {
+            display: flex;
+        }
+
+        .reviews__slider {  
+        display: flex;
+        background-color: white;
+        margin: 0px 20px 0px 20px;
+        border-radius: 10px;
+        width: 84vw;
+        height: 380px; 
+
+        .reviews__slider-bar {
+            display: flex;
+        }
+
+        .reviews__slider-bar-head-img-big {
+            display: flex;
+            width: 320px;
+            object-fit: cover;
+            border-radius: 10px 0px 0px 10px;
+        }
+        
+        .reviews__slider-bar-box {
+
+            .reviews__slider-bar-head {
+            display: flex;
+            margin: 40px 20px 0px 3px;
+            padding-top: 6px;
+
+            .reviews__slider-bar-head-img {
+                border-radius: 50px;
+                display: none;
+            }
+
+            .reviews__slider-bar-head-text {
+                margin-left: 16px;
+                padding-right: 21px;
+
+                .reviews__slider-bar-head-text-name {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin: 0px 0px 10px 0px;
+                }
+
+                .reviews__slider-bar-head-text-discription {
+                    color: grey;
+                }
+        }
+        
+            }
+        }
+
+        .reviews__slider-bar-main {
+            margin: 30px 20px;
+            font-size: 17px;
+            font-weight: 400;
+
+            .reviews__slider-bar-main-text {
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+        .slider-hide {
+            display: none;
+        }
+
+    }
+    
+    
+    .reviews__slider-bar-checkboxes {
+        margin: 20px 20px;
+        display: flex;
+        gap: 20px;
+
+        .reviews__slider-bar-checkboxes-circle {
+            width: 10px;
+            height: 10px;
+            background-color: #1F83F9;
+            border-radius: 20px;
+        }
+    }
+}
 
 }
