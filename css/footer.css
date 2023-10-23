@@ -1,25 +1,69 @@
 footer {
   display: flex;
-  max-width: 1600px;
+  max-width: 1920px;
   width: 100%;
-  flex-direction: column;
+  justify-content: center;
+  margin: 180px, 60px;
   align-items: center;
+  flex-direction: column;
   gap: 60px;
-  background: #000037; }
-  footer .social {
-    flex-direction: column; }
-    footer .social .icon {
+  background: #000038; }
+  footer .footer-top {
+    border-top: 1px solid #FFF;
+    display: flex;
+    padding-top: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: center;
+    max-width: 1240px;
+    width: 100%; }
+    footer .footer-top .block {
+      justify-content: center;
+      display: inline-block;
+      margin-right: 100px;
+      text-align: center;
+      align-items: flex-start; }
+      footer .footer-top .block img {
+        padding-top: 20px; }
+      footer .footer-top .block .social {
+        margin-top: 20px;
+        margin-left: 40px;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        display: flex; }
+    footer .footer-top .icon {
       display: block;
       width: 28px;
       height: 28px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
-    footer .social .vk {
+    footer .footer-top .vk {
       background-image: url("../img/footer/VK.svg"); }
-    footer .social .pin {
+    footer .footer-top .pin {
       background-image: url("../img/footer/Pintrest.svg"); }
-    footer .social .ok {
+    footer .footer-top .ok {
       background-image: url("../img/footer/OK.svg"); }
-    footer .social .youtube {
+    footer .footer-top .youtube {
       background-image: url("../img/footer/Youtube.svg"); }
+  footer h1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+  footer p {
+    color: #FFF;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+  footer .footer-bottom {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px; }
