@@ -27,5 +27,8 @@
     },
     "[scss]": {
         "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "Sophisticode.php-formatter"
     }
 }
