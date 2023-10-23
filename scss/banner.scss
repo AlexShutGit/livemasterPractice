@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
 @media screen and (max-width: 768px) {
     
 }
@@ -40,6 +42,7 @@
 }
 
 .text__info {
+    
     color: #fff;
     font-family: Roboto;
     font-size: 24px;
@@ -61,15 +64,15 @@
     align-items: baseline;
 }
 
-// #text__info {
-//     color: #fff;
-//     font-family: Roboto;
-//     font-size: 24px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: normal;
-//     margin-top: 0;
-// }
+#text__info {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: -4px;
+}
 
 @media screen and (min-width: 769px) {
    .statistic {
@@ -85,6 +88,8 @@
         background-position: center;
    }
    .containerInfo {
+        width: 1280px;
+        height: 123px;
        display: flex;
        flex-direction: row;
        align-items: baseline;
@@ -92,30 +97,20 @@
    }
 
    .containerInfo__infoUSer {
-       display: flex;
-       flex-direction: column;
+      display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
    }
-
-   .text__numberWithAge {
-       display: flex;
-       align-items: baseline;
-   }
-   
    .text__numbers {
-       color: #FFF;
+    color: #FFF;
     font-family: Roboto;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
    }
-
-   .text__info {
-       color: #FFF;
-       font-family: Roboto;
-       font-size: 28px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-   }
 }
+
