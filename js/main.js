@@ -2,6 +2,22 @@
 
 
 const slider = (elem) => {
+
+    const subject = 'female' //<--- задаем пол по которму выставлять карточки
+
+    let quoteCardsFemale = [0, 3, 4, 1, 2]; //<--- порядок карточек если пол ЖЕНСКИЙ
+    let quoteCardsMale = [2, 0, 1, 3, 4]; //<--- порядок карточек если пол МУЖСКОЙ
+    
+    const cards = document.querySelectorAll('.reviews__slider');
+    
+    if (subject === 'female') {
+        quoteCardsFemale.forEach((element, index) => cards[index]['id'] = (element));
+    }
+
+    if (subject === 'male') {
+        quoteCardsMale.forEach((element, index) => cards[index]['id'] = (element));
+    }
+  
     if (elem.target.id == 'prev-slide') {
         slideIndex = slideIndex - 1;
     } else {
@@ -23,12 +39,18 @@ const slider = (elem) => {
     for (let i = 0; i < slides.length; i++) {
         if (slides[i].id == slideIndex) {   
             slides[i].setAttribute('class', 'reviews__slider');
-            cirles[i].setAttribute('class', 'reviews__slider-bar-checkboxes-circle checked');
         } else {
             slides[i].setAttribute('class', 'reviews__slider slider-hide');
+        }
+    } 
+    
+    for (let i = 0; i < slides.length; i++) {
+        if (cirles[i].id == slideIndex) {
+            cirles[i].setAttribute('class', 'reviews__slider-bar-checkboxes-circle checked');
+        } else {
             cirles[i].setAttribute('class', 'reviews__slider-bar-checkboxes-circle');
         }
-    }   
+    }
 }
 
 const touchStart = (event) => {
