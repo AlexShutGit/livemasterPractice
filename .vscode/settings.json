@@ -26,6 +26,6 @@
         "editor.formatOnSave": true
     },
     "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
     }
 }
