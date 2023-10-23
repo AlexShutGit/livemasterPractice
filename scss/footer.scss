@@ -1,0 +1,40 @@
+footer{
+    display: flex;
+    max-width: 1600px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background: #000037;
+
+
+    .social{
+        
+        flex-direction: column;
+        
+
+        .icon {
+            display: block;
+            width: 28px;
+            height: 28px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .vk{
+            background-image: url('../img/footer/VK.svg');
+        }
+        .pin{
+            background-image: url('../img/footer/Pintrest.svg');
+        }
+        .ok{
+            background-image: url('../img/footer/OK.svg');
+        }
+        .youtube{
+            background-image: url('../img/footer/Youtube.svg');
+        }
+    }
+}
+
+
+
