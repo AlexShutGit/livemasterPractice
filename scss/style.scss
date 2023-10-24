@@ -1,4 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html {
+    font-size: 1vw;
+}
 
 body {
     min-width: 356px;
@@ -165,6 +170,7 @@ body {
 
                 .reviews__slider-bar-head-text-discription {
                     color: grey;
+                    font-size: 3rem;
                 }
         }
         
@@ -317,13 +323,13 @@ body {
         flex-direction: row;
 
         .header__text-main {
-            font-size: 9.5vh;
+            font-size: 5rem;
             font-weight: 400;
             margin: 10px 0px;
         }
 
         .header__text-disc {
-            font-size: 5.3vh;
+            font-size: 3rem;
             font-weight: 300;
             margin: 5px 0px;
         }
