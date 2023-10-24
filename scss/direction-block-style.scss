@@ -764,12 +764,14 @@ body {
         margin-top: 90px;
 
         .header__text-main {
+            color: white;
             font-size: 40px;
             font-weight: 400;
             margin: 10px 0px;
         }
 
         .header__text-disc {
+            color: white;
             font-size: 28px;
             font-weight: 300;
             margin: 5px 0px 0px 0px;
@@ -974,17 +976,16 @@ body {
             margin-top: 10vh;
             display: flex;
             flex-direction: row;
-            p{
-                color: white;
-            }
-
+           
             .header__text-main {
+                color: white;
                 font-size: 5rem;
                 font-weight: 400;
                 margin: 10px 0px;
             }
 
             .header__text-disc {
+                color: white;
                 font-size: 3rem;
                 font-weight: 300;
                 margin: 5px 0px;
