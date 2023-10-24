@@ -1,0 +1,97 @@
+footer{
+
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    justify-content: center;
+    margin: 180px, 60px;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    background: hsl(240, 100%, 11%);
+    
+
+    .footer-top{
+        border-top: 1px solid #FFF;
+        display: flex;
+        padding-top: 60px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        text-align: center;
+        max-width: 1240px;
+        width: 100%;
+
+        .block{
+            justify-content: center;
+            display: inline-block;
+            margin-right: 100px;
+            text-align: center;
+            align-items: flex-start;
+
+            img{
+                padding-top: 20px;
+            }
+
+            .social{
+                margin-top: 20px;
+                margin-left: 40px;
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: center;
+                display: flex;
+            }
+            
+        }
+        .icon {
+                display: block;
+                width: 28px;
+                height: 28px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .vk{
+                background-image: url('../img/footer/VK.svg');
+            }
+            .pin{
+                background-image: url('../img/footer/Pintrest.svg');
+            }
+            .ok{
+                background-image: url('../img/footer/OK.svg');
+            }
+            .youtube{
+                background-image: url('../img/footer/Youtube.svg');
+            }
+        
+    }
+
+    h1{
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    p{
+        color: #FFF;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    
+
+    .footer-bottom{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+}
+
+
+
