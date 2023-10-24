@@ -1,12 +1,10 @@
 
-
-
 const slider = (elem) => {
 
-    const subject = 'female' //<--- задаем пол по которму выставлять карточки
+    const subject = 'default' //<--- задаем пол по которму выставлять карточки
 
-    let quoteCardsFemale = [0, 3, 4, 1, 2]; //<--- порядок карточек если пол ЖЕНСКИЙ
-    let quoteCardsMale = [2, 0, 1, 3, 4]; //<--- порядок карточек если пол МУЖСКОЙ
+    const quoteCardsFemale = [0, 3, 4, 1, 2]; //<--- порядок карточек если пол ЖЕНСКИЙ
+    const quoteCardsMale = [2, 0, 1, 3, 4]; //<--- порядок карточек если пол МУЖСКОЙ
     
     const cards = document.querySelectorAll('.reviews__slider');
     
@@ -52,6 +50,7 @@ const slider = (elem) => {
         }
     }
 }
+
 
 const touchStart = (event) => {
     xDown = event.touches[0].clientX;
@@ -107,6 +106,7 @@ const touchMove = (event) => {
     xDown = null;
     yDown = null;
 }
+
 
 const initPageLogic = () => {
 
