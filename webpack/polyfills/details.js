@@ -1,0 +1,7 @@
+/*!
+ * Not editable file
+ * @author Rico Sta. Cruz <rico@ricostacruz.com>
+ * @url https://github.com/rstacruz/details-polyfill/
+ */
+/* eslint-disable */
+'use strict';var _typeof='function'==typeof Symbol&&'symbol'==typeof Symbol.iterator?function(a){return typeof a}:function(a){return a&&'function'==typeof Symbol&&a.constructor===Symbol&&a!==Symbol.prototype?'symbol':typeof a};void function(a,b){'function'==typeof define&&define.amd?define(b):'object'===('undefined'==typeof exports?'undefined':_typeof(exports))?module.exports=b():b()}(void 0,function(){var d='details',f='summary',g=function(){var h=document.createElement(d);if(!('open'in h))return!1;h.innerHTML='<'+f+'>a</'+f+'>b',document.body.appendChild(h);var i=h.offsetHeight;h.open=!0;var j=i!=h.offsetHeight;return document.body.removeChild(h),j}();g||(document.documentElement.className+=' no-details',window.addEventListener('click',function(h){if('summary'===h.target.nodeName.toLowerCase()){var i=h.target.parentNode;if(!i)return;i.getAttribute('open')?(i.open=!1,i.removeAttribute('open')):(i.open=!0,i.setAttribute('open','open'))}}),function(h,i){if(!document.getElementById(h)){var j=document.createElement('style');j.id=h,j.innerHTML=i,document.getElementsByTagName('head')[0].appendChild(j)}}('details-polyfill-style','html.no-details '+d+':not([open]) > :not('+f+') { display: none; }\nhtml.no-details '+d+' > '+f+':before { content: "\u25B6"; display: inline-block; font-size: .8em; width: 1.5em; }\nhtml.no-details '+d+'[open] > '+f+':before { content: "\u25BC"; }'))});

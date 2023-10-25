@@ -3,7 +3,6 @@
     "editor.codeActionsOnSaveTimeout": 100000,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
     "editor.formatOnSaveTimeout": 100000,
     "editor.formatOnType": true,
     "eslint.alwaysShowStatus": true,
@@ -14,7 +13,7 @@
     "prettier.useEditorConfig": true,
     "stylelint.autoFixOnSave": true,
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter",
         "editor.formatOnSave": true
     },
     "[javascript]": {
@@ -26,6 +25,7 @@
         "editor.formatOnSave": true
     },
     "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "editor.formatOnSave": true
 }

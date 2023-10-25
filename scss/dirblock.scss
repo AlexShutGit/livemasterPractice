@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html {
+    font-size: 5vw;
+}
+
+body {
+    min-width: 356px;
+    width: 100%;
+    margin: 0;
+    font-family: Roboto;
+    color: #333333;
+}
+
+.direction-block {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2.2vw 1.1vw;
+    gap: 1.6vw;
+    h3 {
+        font-family: Roboto;
+        font-size: 1.7vw;
+        font-weight: 600;
+        line-height: 2.1vw;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1.1vw;
+        align-items: center;
+        max-width: 83.3vw;
+        .card {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 3.5vw 3.5vw 0.8vw 3.5vw;
+            border-radius: 1.3vw;
+            gap: 0.8vw;
+            background-color: #DFF6FE;
+            .card-header {
+                margin-left: -3.5vw;
+                display: flex;
+                border-radius: 0px 8px 8px 0px;
+                padding: 0.2vw 1.6vw 0.2vw 1.6vw;
+                background-color: #66ACFF;
+                gap: 10px;
+                span {
+                    font-family: Roboto;
+                    font-size: 1.6vw;
+                    font-weight: 400;
+                    line-height: 1.3vw;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: white;
+                }
+            }
+            .card__content {
+                display: flex;
+                flex-direction: column;
+                p {
+                    font-family: Roboto;
+                    font-size: 0.8vw;
+                    font-weight: 400;
+                    line-height: 1.05vw;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                img {
+                    width: 6.6vw;
+                    align-self: flex-end;
+                }
+                &-image-desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}

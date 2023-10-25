@@ -1,0 +1,7 @@
+{
+  "name": "livemaster/praktikum",
+  "description": "Livemaster Praktikum",
+  "require": {
+    "twig/twig": "3.3.2"
+  }
+}

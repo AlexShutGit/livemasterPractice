@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+html {
+    font-size: auto;
+}
+
+.products-block {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px 40px 20px;
+    gap: 30px;
+    min-width: 360px;
+    h1 {
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        text-align: left;
+    }
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 320px;
+    &__top {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    &__bot {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .first {
+        background-color: #ffebd8;
+    }
+    .second {
+        background-color: #fde5ff;
+    }
+    .third {
+        background-color: #cdf5ee;
+    }
+    .fourth {
+        background-color: #dbeeff;
+    }
+    .fifth {
+        background-color: #e0dfff;
+    }
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 16px;
+    gap: 24px;
+    max-width: 320px;
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 16px;
+        h1 {
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            font-weight: bold;
+            text-align: left;
+        }
+        p {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: left;
+        }
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 40px 16px 40px;
+        border-radius: 8px;
+        gap: 10px;
+        background-color: #ffffff;
+        border: none;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 1vw;
+    }
+    .products-block {
+        padding: 5vw 11.25vw 6.25vw 11.25vw;
+        gap: 3vw;
+        h1 {
+            align-self: flex-start;
+            font-family: Roboto;
+            font-size: 2.75rem;
+            font-weight: 600;
+            line-height: 2.375vw;
+        }
+    }
+    .products {
+        flex-direction: column;
+        gap: 1.25vw;
+        max-width: 100%;
+        &__top {
+            justify-content: space-between;
+            gap: 2.5vw;
+            flex-direction: row;
+            width: 77.5vw;
+        }
+        &__bot {
+            gap: 2.5vw;
+            flex-direction: row;
+            width: 77.5vw;
+        }
+        .first {
+            width: 37.5vw;
+            background-color: #ffebd8;
+        }
+        .second {
+            width: 37.5vw;
+            background-color: #fde5ff;
+        }
+        .third {
+            background-color: #cdf5ee;
+        }
+        .fourth {
+            background-color: #dbeeff;
+        }
+        .fifth {
+            background-color: #e0dfff;
+        }
+    }
+    .product {
+        padding: 1.25vw;
+        border-radius: 1vw;
+        gap: 2vw;
+        max-width: 100%;
+        &__text {
+            gap: 1vw;
+            h1 {
+                font-family: Roboto;
+                font-size: 1.75rem;
+                font-weight: 500;
+                line-height: 2vw;
+                font-weight: bold;
+                text-align: left;
+            }
+            p {
+                font-family: Roboto;
+                font-size: 1.25vw;
+                font-weight: 400;
+                line-height: 1.4vw;
+                text-align: left;
+            }
+        }
+        &-button {
+            align-self: flex-start;
+            padding: 1vw 2.5vw;
+            border-radius: 0.5vw;
+            gap: 0.625vw;
+            background-color: #ffffff;
+            border: none;
+            font-family: Roboto;
+            font-size: 1.25vw;
+            font-weight: bold;
+            line-height: 1.4vw;
+            text-align: center;
+        }
+    }
+}
