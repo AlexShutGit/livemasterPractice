@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    background-color: #DFF6FE; }
+  .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mission__photo {
+    background-image: url(../../img/mission_company/image_company_mob.png); } }
