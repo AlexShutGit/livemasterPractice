@@ -50,6 +50,13 @@
             border-radius: 8px;
             border: 1px solid #C4C4C4;
             background: #FFF;
+           
+            color: #8B8B8B;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
 
             
         }
@@ -63,6 +70,19 @@
             border-radius: 8px;
             border: 1px solid #C4C4C4;
             background: #FFF;
+            
+
+            
+
+            &:default{
+                
+                color: #8B8B8B;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
         }
 
         button{
