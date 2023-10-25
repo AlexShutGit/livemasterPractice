@@ -93,5 +93,101 @@ footer{
     }
 }
 
+@media screen and (max-width: 768px){
+    footer{
+        border-top: 1px solid #FFF;
+        display: inline-flex;
+        max-width: 360px;
+        width: 100%;
+        
+        align-items: flex-start;
+        gap:40px;
+    
+
+    
+        .footer-top{
+            border-top: 1px solid #FFF;
+            display: flex;
+            padding-top: 60px;
+            padding-left: 20px;
+            justify-content: center;
+            text-align: left;
+            max-width: 1240px;
+            width: 100%;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        
+
+        .block{
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: center;
+            align-items: flex-start;
+
+            img{
+                padding-top: 20px;
+            }
+
+            .social{
+                
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: center;
+                display: flex;
+            }
+            
+        }
+        .icon {
+                display: block;
+                width: 28px;
+                height: 28px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .vk{
+                background-image: url('../img/footer/VK.svg');
+            }
+            .pin{
+                background-image: url('../img/footer/Pintrest.svg');
+            }
+            .ok{
+                background-image: url('../img/footer/OK.svg');
+            }
+            .youtube{
+                background-image: url('../img/footer/Youtube.svg');
+            }
+    }
+        
+    h1{
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    p{
+        color: #FFF;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    
+
+    .footer-bottom{
+        display: flex;
+        gap: 20px, 60px;
+    }
+}
 
 
