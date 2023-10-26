@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+html {
+    font-size: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    color: #333333;
+}
+
+body {
+    background-color: black;
+}
+
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 1vw;
+    }
+    .modal-request {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(328.65deg, #FF5AEF -5.79%, #BA8BFF 53.81%, #55C4FF 99.19%);
+        max-width: 20vw;
+        border-radius: 1vw;
+        padding: 2.5vw;
+        gap: 2.5vw;
+        .picture {
+            width: 18.75vw;
+            height: 18.75vw;
+            position: relative;
+            img {
+                position: absolute;
+            }
+            &-checkmark {
+                z-index: 4;
+                padding: 5vw 5.5vw 5.28vw 3.5vw;
+                width: 11.56vw;
+                height: 8.56vw;
+            }
+            &-figure {
+                z-index: 3;
+                padding: 0px 3vw 0px 3vw;
+                width: 12.75vw;
+                height: 18.75vw;
+            }
+            &-ellipse {
+                z-index: 2;
+                padding-left: 0.125vw;
+                width: 18.125vw;
+                height: 18.125vw;
+            }
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            width: 20vw;
+            h1 {
+                font-family: Roboto;
+                font-size: 1.875rem;
+                font-weight: 500;
+                line-height: 2.1875vw;
+                text-align: center;
+                color: white;
+            }
+            p {
+                font-family: Roboto;
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.3125vw;
+                text-align: center;
+                color: white;
+            }
+        }
+        button {
+            width: 20vw;
+            padding: 1vw 2.5vw;
+            border-radius: 0.5vw;
+            gap: 0.625vw;
+            border: none;
+        }
+        .close {
+            display: flex;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            padding: 1.25vw;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 1.25vw;
+            }
+        }
+    }
+}
