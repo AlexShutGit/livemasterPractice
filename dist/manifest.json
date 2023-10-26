@@ -1,0 +1,8 @@
+{
+  "version": "20231025135342",
+  "home.css": "/dist/home.css",
+  "home.js": "/dist/home.js",
+  "runtime.js": "/dist/runtime.js",
+  "vendor.js": "/dist/vendor.js",
+  "vendors~IObserver.js": "/dist/vendors~IObserver.js"
+}
