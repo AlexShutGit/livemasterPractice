@@ -3,7 +3,11 @@
     display: flex;
     max-width: 1920px;
     height: auto;
-    background-image: url('../img/registery-form/lines-light\ 1\ \(1\).png') /no-repeat;
+    gap: 40px;
+    background-image: url('../img/registery-form/lines-light_1.png')  ;
+        background-repeat: no-repeat;
+        background-position-x:right ;
+    background-position-y: bottom;
     justify-content: center;
     align-items: center;
 
