@@ -15,18 +15,27 @@
             <h1>Оставьте заявку на участие в Практикуме*</h1>
             <div class="form">
                 <div class="form__data">
-                    <input data-input class="name" placeholder="Имя" type="text" />
-                    <div class="alert"></div>
-                    <div class="number-sex">
-                        <select name="" id="">
-                                <option value="" disabled selected>Пол</option>
-                            </select>
-
-                        <input data-input class="tel" placeholder="+7 (___) __-__-__" type="number" />
+                    <div class="name-block">
+                        <input data-input class="name" placeholder="Имя" type="text" required />
                         <div class="alert"></div>
                     </div>
-                    <input data-input class="email" placeholder="Электронная почта" type="email" />
-                    <div class="alert"></div>
+                    <div class="number-sex">
+                        <div class="sex-block">
+                            <select name="" id="">
+                                    <option value="" disabled selected>
+                                        Пол
+                                    </option>
+                                </select>
+                        </div>
+                        <div class="number-block">
+                            <input data-input class="number" placeholder="+7 (___) ___-__-__" type="tel" maxlength="17" required />
+                            <div class="alert"></div>
+                        </div>
+                    </div>
+                    <div class="email-block">
+                        <input data-input class="email" placeholder="Электронная почта" type="email" required />
+                        <div class="alert"></div>
+                    </div>
                 </div>
                 <div class="form__direction">
                     <h3>Выберите интересующие курсы:</h3>

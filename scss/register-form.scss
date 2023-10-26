@@ -62,7 +62,7 @@ h3 {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-                gap: 12px;
+                gap: 4px;
                 input {
                     width: 74vw;
                     display: flex;
@@ -86,10 +86,25 @@ h3 {
                     font-weight: 400;
                     line-height: 16px;
                 }
+                .name-block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
                 .number-sex {
                     display: flex;
                     flex-direction: column;
                     gap: 12px;
+                    .number-block {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                    }
+                    .sex-block {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                    }
                     input {
                         width: 74vw;
                         display: flex;
@@ -114,6 +129,11 @@ h3 {
                     .validate {
                         border: rgba(210, 17, 17, 1) 1px solid;
                     }
+                }
+                .email-block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
                 }
             }
             &__direction {
@@ -282,7 +302,23 @@ h3 {
                         font-weight: 400;
                         line-height: 1.131vw;
                     }
+                    .alert {
+                        color: rgba(210, 17, 17, 1);
+                        font-family: Roboto;
+                        font-size: 1vw;
+                        font-weight: 400;
+                        line-height: 1vw;
+                    }
+                    .name-block {
+                        gap: 0.2vw;
+                    }
                     .number-sex {
+                        .number-block {
+                            gap: 0.2vw;
+                        }
+                        .sex-block {
+                            gap: 0.2vw;
+                        }
                         display: flex;
                         flex-direction: row;
                         gap: 1.5vw;
@@ -303,6 +339,11 @@ h3 {
                             gap: 0.625vw;
                             width: 12.9vw;
                         }
+                    }
+                    .email-block {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.2vw;
                     }
                 }
                 &__direction {
