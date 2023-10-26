@@ -23,10 +23,11 @@ footer{
         width: 100%;
 
         .block{
-            justify-content: center;
-            display: inline-block;
+            justify-content: flex-start;
+            display: flex;
             margin-right: 100px;
             text-align: center;
+            flex-direction: column;
             align-items: flex-start;
 
             img{
@@ -34,8 +35,7 @@ footer{
             }
 
             .social{
-                margin-top: 20px;
-                margin-left: 40px;
+               
                 align-items: flex-start;
                 flex-direction: row;
                 justify-content: center;
@@ -186,7 +186,13 @@ footer{
 
     .footer-bottom{
         display: flex;
-        gap: 20px, 60px;
+        padding-left: 20px;
+        text-align: left;
+        max-width: 1240px;
+        width: 100%;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-width: 356px;
+  width: 100%;
+  margin: 0;
+  font-family: Roboto;
+  color: #333333; }
+
+.direction-block {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 1275px;
+  gap: 30px; }
+  .direction-block .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 20px;
+    max-width: 388px; }
+    .direction-block .content h3 {
+      font-family: Roboto;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 38px;
+      letter-spacing: 0em;
+      margin: 0; }
+    .direction-block .content .cards {
+      max-width: 320px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      min-height: 1089px; }
+      .direction-block .content .cards .card {
+        max-width: 320px;
+        background-color: #dff6fe;
+        border-radius: 16px;
+        padding: 20px 20px 16px 20px;
+        gap: 4px;
+        transition: 0.2s ease-in; }
+        .direction-block .content .cards .card span {
+          margin: 0;
+          padding: 4px 20px;
+          background-color: #66acff;
+          border-radius: 0px 8px 8px 0px;
+          gap: 10px;
+          margin-left: -20px;
+          font-family: Roboto;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: white;
+          display: inline-block; }
+        .direction-block .content .cards .card .card__content {
+          display: flex;
+          flex-direction: column; }
+          .direction-block .content .cards .card .card__content p {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            margin-top: 12px; }
+          .direction-block .content .cards .card .card__content img {
+            align-self: flex-end; }
+        .direction-block .content .cards .card:hover {
+          background-color: #c6e8ff;
+          transition: 0.2s ease-in;
+          transform: scale(1.02); }
+
+@media screen and (min-width: 769px) {
+  body {
+    min-width: 356px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Roboto;
+    color: #333333; }
+  .direction-block {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; }
+    .direction-block .content {
+      display: block;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 40px 20px;
+      width: 80vw;
+      max-width: 100%; }
+      .direction-block .content h3 {
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0em;
+        margin: 0; }
+      .direction-block .content .cards {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        max-width: 1240px;
+        height: 479px;
+        min-height: auto; }
+        .direction-block .content .cards .card {
+          flex-direction: column;
+          max-width: 387px;
+          background-color: #dff6fe;
+          border-radius: 16px;
+          padding: 20px 20px 16px 20px;
+          gap: 16px;
+          max-height: 479px; }
+          .direction-block .content .cards .card span {
+            margin: 0;
+            padding: 4px 20px;
+            background-color: #66acff;
+            border-radius: 0px 8px 8px 0px;
+            gap: 10px;
+            margin-left: -20px;
+            font-family: Roboto;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            display: inline-block; }
+          .direction-block .content .cards .card .card__content {
+            display: flex;
+            flex-direction: column; }
+            .direction-block .content .cards .card .card__content p {
+              font-family: Roboto;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 23px;
+              letter-spacing: 0em;
+              text-align: left;
+              margin: 0;
+              margin-top: 12px; }
+            .direction-block .content .cards .card .card__content img {
+              width: 9vw;
+              align-self: flex-end; } }
