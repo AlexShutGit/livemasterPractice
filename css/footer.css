@@ -19,15 +19,16 @@ footer {
     max-width: 1240px;
     width: 100%; }
     footer .footer-top .block {
-      justify-content: flex-start;
-      display: flex;
+      justify-content: center;
+      display: inline-block;
       margin-right: 100px;
       text-align: center;
-      flex-direction: column;
       align-items: flex-start; }
       footer .footer-top .block img {
         padding-top: 20px; }
       footer .footer-top .block .social {
+        margin-top: 20px;
+        margin-left: 40px;
         align-items: flex-start;
         flex-direction: row;
         justify-content: center;
@@ -66,78 +67,3 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 60px; }
-
-@media screen and (max-width: 768px) {
-  footer {
-    border-top: 1px solid #FFF;
-    display: inline-flex;
-    max-width: 360px;
-    width: 100%;
-    align-items: flex-start;
-    gap: 40px; }
-    footer .footer-top {
-      border-top: 1px solid #FFF;
-      display: flex;
-      padding-top: 60px;
-      padding-left: 20px;
-      justify-content: center;
-      text-align: left;
-      max-width: 1240px;
-      width: 100%;
-      align-content: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: stretch; }
-    footer .block {
-      justify-content: center;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      text-align: center;
-      align-items: flex-start; }
-      footer .block img {
-        padding-top: 20px; }
-      footer .block .social {
-        align-items: flex-start;
-        flex-direction: row;
-        justify-content: center;
-        display: flex; }
-    footer .icon {
-      display: block;
-      width: 28px;
-      height: 28px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain; }
-    footer .vk {
-      background-image: url("../img/footer/VK.svg"); }
-    footer .pin {
-      background-image: url("../img/footer/Pintrest.svg"); }
-    footer .ok {
-      background-image: url("../img/footer/OK.svg"); }
-    footer .youtube {
-      background-image: url("../img/footer/Youtube.svg"); }
-  h1 {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; }
-  p {
-    color: #FFF;
-    text-align: right;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; }
-  .footer-bottom {
-    display: flex;
-    padding-left: 20px;
-    text-align: left;
-    max-width: 1240px;
-    width: 100%;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column; } }
