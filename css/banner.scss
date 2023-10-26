@@ -1,31 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+<<<<<<< HEAD:css/banner.scss
+=======
+
+html{
+    font-size: 1vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+>>>>>>> develop:scss/banner.scss
 .statistic {
     display: flex;
     flex-direction: column;
     width: 100%;
+<<<<<<< HEAD:css/banner.scss
     // height: 100vh;
+=======
+    height: 479px;
+>>>>>>> develop:scss/banner.scss
     background-image: url(../../img/banner/bg__banner_mob.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD:css/banner.scss
     padding: 4vw 6vw;
     max-height: 479px;
+=======
+    padding: 70px 20px 80px 20px;
+>>>>>>> develop:scss/banner.scss
 }
 
 .containerInfo {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD:css/banner.scss
     // margin-top: 70px;
+=======
+    height: 100%;
+    justify-content: space-between;
+
+>>>>>>> develop:scss/banner.scss
 }
 
 .containerInfo__infoUSer {
     display: flex;
     flex-direction: row;
     align-items: center;
+<<<<<<< HEAD:css/banner.scss
     // width: 258px;
     // height: 83px;
+=======
+    width: 258px;
+
+    // height: 83px;
+    // margin-bottom: 40px;
+>>>>>>> develop:scss/banner.scss
 }
 
 .text__numbers {
@@ -34,7 +68,7 @@
     font-size: 3.1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 0;
+    line-height: 1;
 }
 
 .text__info {
@@ -71,6 +105,7 @@
 }
 
 @media screen and (min-width: 769px) {
+<<<<<<< HEAD:css/banner.scss
     .statistic {
         display: flex;
         flex-direction: row;
@@ -78,10 +113,62 @@
         width: 100%;
         // height: 292px;
         // padding: 80px 160px;
+=======
+.text__numbers {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text__info {
+    
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__age {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.text__numberWithAge {
+    display: flex;
+    align-items: baseline;
+}
+
+#text__info {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: -4px;
+}
+
+   .statistic {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       width: auto;
+       height: auto;
+       padding: 5vw 10vw;
+>>>>>>> develop:scss/banner.scss
         background-image: url(../../img/banner/bg__banner.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+<<<<<<< HEAD:css/banner.scss
     }
     .containerInfo {
         width: 80vw;
@@ -108,3 +195,34 @@
         line-height: normal;
     }
 }
+=======
+   }
+   .containerInfo {
+        width: 103vw;
+        height: 123px;
+       display: flex;
+       flex-direction: row;
+       align-items: baseline;
+       justify-content: space-between;
+   }
+
+   .containerInfo__infoUSer {
+      display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    margin-right: 4vw;
+   }
+   .text__numbers {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+}
+
+>>>>>>> develop:scss/banner.scss
