@@ -1,4 +1,4 @@
-const initPageLogic = () => {
+const initPageLogica = () => {
     const dropDownButton = document.querySelector('.dropdown__button')
     const dropDownList = document.querySelector('.dropdown__list')
     const dropDownListItems = dropDownList.querySelectorAll(
@@ -14,6 +14,7 @@ const initPageLogic = () => {
         Item.addEventListener('click', (elem) => {
             elem.stopPropagation()
             dropDownButton.innerHTML = elem.target.innerText
+            dropDownButton.classList.add('picked')
             dropDownInput.value = elem.target.dataset.value
             dropDownList.classList.remove('dropdown__list--visible')
         })
@@ -28,4 +29,4 @@ const initPageLogic = () => {
     })
 }
 
-document.addEventListener('DOMContentLoaded', initPageLogic)
+document.addEventListener('DOMContentLoaded', initPageLogica)
