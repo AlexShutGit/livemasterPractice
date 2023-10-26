@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 html {
     font-size: auto;
 }
@@ -31,13 +30,11 @@ h3 {
     align-items: center;
     padding: 40px 20px;
     gap: 40px;
-
     .register-application {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
-
         h1 {
             font-family: Roboto;
             font-size: 36px;
@@ -45,7 +42,6 @@ h3 {
             line-height: 42px;
             color: #ffffff;
         }
-
         &-paragraph {
             font-family: Roboto;
             font-size: 16px;
@@ -53,7 +49,6 @@ h3 {
             line-height: 19px;
             color: #ffffff;
         }
-
         .form {
             display: flex;
             flex-direction: column;
@@ -63,13 +58,11 @@ h3 {
             border-radius: 16px;
             gap: 24px;
             background-color: #ffffff;
-
             &__data {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
                 gap: 12px;
-
                 input {
                     width: 74vw;
                     display: flex;
@@ -77,14 +70,22 @@ h3 {
                     border: rgba(204, 204, 204, 1) 1px solid;
                     padding: 10px;
                     gap: 10px;
-
                     font-family: Roboto;
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 21px;
                     color: rgba(51, 51, 51, 1);
                 }
-
+                .validate {
+                    border: rgba(210, 17, 17, 1) 1px solid;
+                }
+                .alert {
+                    color: rgba(210, 17, 17, 1);
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                }
                 .number-sex {
                     display: flex;
                     flex-direction: column;
@@ -96,14 +97,12 @@ h3 {
                         border: rgba(204, 204, 204, 1) 1px solid;
                         padding: 10px;
                         gap: 10px;
-
                         font-family: Roboto;
                         font-size: 18px;
                         font-weight: 400;
                         line-height: 21px;
                         color: rgba(51, 51, 51, 1);
                     }
-
                     select {
                         display: flex;
                         border-radius: 8px;
@@ -112,15 +111,16 @@ h3 {
                         gap: 10px;
                         width: 80vw;
                     }
+                    .validate {
+                        border: rgba(210, 17, 17, 1) 1px solid;
+                    }
                 }
             }
-
             &__direction {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
                 gap: 12px;
-
                 h3 {
                     font-family: Roboto;
                     font-size: 16px;
@@ -128,7 +128,6 @@ h3 {
                     line-height: 19px;
                     color: #333333;
                 }
-
                 select {
                     display: flex;
                     border-radius: 8px;
@@ -148,13 +147,11 @@ h3 {
                 background-color: rgba(31, 131, 249, 1);
                 border: none;
                 width: 80vw;
-
                 font-family: Roboto;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 19px;
                 color: #ffffff;
-
                 transition: background-color 0.2s ease-in;
                 &:hover {
                     transition: background-color 0.2s ease-in;
@@ -168,28 +165,25 @@ h3 {
             align-items: center;
             flex-direction: row;
             gap: 24px;
-
             .count {
                 background-color: #ffffff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 border-radius: 16px;
                 padding: 16px;
                 gap: 16px;
-
                 .blink {
                     p {
                         font-family: Roboto;
                         font-size: 28px;
                         font-weight: 400;
                         line-height: 33px;
-
                         color: #333333;
                     }
                     color: #333333;
-                    animation: blink 2s linear infinite; /* Параметры анимации */
+                    animation: blink 2s linear infinite;
+                    /* Параметры анимации */
                 }
                 @keyframes blink {
                     0% {
@@ -203,7 +197,6 @@ h3 {
                     }
                 }
             }
-
             h1 {
                 font-family: Roboto;
                 font-size: 28px;
@@ -218,7 +211,6 @@ h3 {
     html {
         font-size: 1vw;
     }
-
     .register-form {
         * {
             color: #333333;
@@ -226,13 +218,12 @@ h3 {
             font-weight: 400;
             line-height: 1.3125;
         }
-        ::placeholder {
+         ::placeholder {
             font-family: Roboto;
             font-size: 1.125vw;
             font-weight: 400;
             line-height: 1.3125;
         }
-
         background-image: url('../../img/register-form/background-desktop.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -243,7 +234,6 @@ h3 {
         padding: 5vw 11.25vw 5vw 11.25vw;
         gap: 2.5vw;
         height: 27.8125vw;
-
         .register-application {
             display: flex;
             flex-direction: column;
@@ -252,14 +242,12 @@ h3 {
             gap: 2.5vw;
             width: 43.75vw;
             padding: 1.25vw 0vw;
-
             h1 {
                 font-family: Roboto;
                 font-size: 3.75vw;
                 font-weight: 400;
                 line-height: 4.375vw;
             }
-
             &-paragraph {
                 bottom: -2.625vw;
                 position: absolute;
@@ -268,7 +256,6 @@ h3 {
                 font-weight: 400;
                 line-height: 1.437vw;
             }
-
             .form {
                 display: flex;
                 position: absolute;
@@ -281,10 +268,8 @@ h3 {
                 border-radius: 1vw;
                 gap: 1.5vw;
                 background-color: #ffffff;
-
                 &__data {
                     gap: 1vw;
-
                     input {
                         width: 25.15vw;
                         display: flex;
@@ -292,13 +277,11 @@ h3 {
                         border: rgba(204, 204, 204, 1) 1px solid;
                         padding: 0.75vw 1vw;
                         gap: 0.625vw;
-
                         font-family: Roboto;
                         font-size: 1.125vw;
                         font-weight: 400;
                         line-height: 1.131vw;
                     }
-
                     .number-sex {
                         display: flex;
                         flex-direction: row;
@@ -309,13 +292,11 @@ h3 {
                             border: rgba(204, 204, 204, 1) 1px solid;
                             padding: 0.75vw 1vw;
                             gap: 0.625vw;
-
                             font-family: Roboto;
                             font-size: 1.125vw;
                             font-weight: 400;
                             line-height: 1.131vw;
                         }
-
                         select {
                             border-radius: 0.5vw;
                             padding: 0.75vw 1vw;
@@ -324,10 +305,8 @@ h3 {
                         }
                     }
                 }
-
                 &__direction {
                     gap: 1vw;
-
                     h3 {
                         font-family: Roboto;
                         font-size: 1.125vw;
@@ -335,7 +314,6 @@ h3 {
                         line-height: 1.131vw;
                         color: rgba(51, 51, 51, 1);
                     }
-
                     select {
                         border-radius: 0.5vw;
                         padding: 0.75vw 1vw;
@@ -348,7 +326,6 @@ h3 {
                     padding: 1.25vw 3.25vw;
                     gap: 0.625vw;
                     width: 27.15vw;
-
                     font-family: Roboto;
                     font-size: 1.25vw;
                     font-weight: 500;
@@ -361,17 +338,14 @@ h3 {
                 align-items: center;
                 flex-direction: row;
                 gap: 1.5vw;
-
                 .count {
                     background-color: #ffffff;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     border-radius: 1vw;
                     padding: 1vw 1.3vw 1vw 1vw;
                     gap: 0.625vw;
-
                     p {
                         font-family: Roboto;
                         font-size: 3rem;
@@ -379,7 +353,6 @@ h3 {
                         line-height: 3.625vw;
                     }
                 }
-
                 h1 {
                     font-family: Roboto;
                     font-size: 1.875rem;

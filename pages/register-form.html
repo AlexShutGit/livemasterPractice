@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../static/css/register-form.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="register-form">
-            <div class="register-application">
-                <h1>Оставьте заявку на участие в Практикуме*</h1>
-                <div class="form">
-                    <div class="form__data">
-                        <input placeholder="Имя" type="text" />
-                        <div class="number-sex">
-                            <select name="" id="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/register-form.css" />
+    <script src="../js/form-validation.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="register-form">
+        <div class="register-application">
+            <h1>Оставьте заявку на участие в Практикуме*</h1>
+            <div class="form">
+                <div class="form__data">
+                    <input data-input class="name" placeholder="Имя" type="text" />
+                    <div class="alert"></div>
+                    <div class="number-sex">
+                        <select name="" id="">
                                 <option value="" disabled selected>Пол</option>
                             </select>
 
-                            <input
-                                class="tel"
-                                placeholder="+7 (___) __-__-__"
-                                type="number"
-                            />
-                        </div>
-                        <input placeholder="Электронная почта" type="email" />
+                        <input data-input class="tel" placeholder="+7 (___) __-__-__" type="number" />
+                        <div class="alert"></div>
                     </div>
-                    <div class="form__direction">
-                        <h3>Выберите интересующие курсы:</h3>
-                        <select name="" id="">
+                    <input data-input class="email" placeholder="Электронная почта" type="email" />
+                    <div class="alert"></div>
+                </div>
+                <div class="form__direction">
+                    <h3>Выберите интересующие курсы:</h3>
+                    <select name="" id="">
                             <option value="" disabled selected>
                                 Выберите курсы
                             </option>
                         </select>
-                    </div>
-                    <button>Принять участие</button>
                 </div>
-                <p class="register-application-paragraph">
-                    *Количество мест ограничено
-                </p>
-                <div class="application-count">
-                    <div class="count">
-                        <p class="blink">15</p>
-                    </div>
-                    <h1>Заявок оставлено</h1>
+                <button>Принять участие</button>
+            </div>
+            <p class="register-application-paragraph">
+                *Количество мест ограничено
+            </p>
+            <div class="application-count">
+                <div class="count">
+                    <p class="blink">15</p>
                 </div>
+                <h1>Заявок оставлено</h1>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
