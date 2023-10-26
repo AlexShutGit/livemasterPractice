@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html {
+    font-size: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+p,
+h1,
+h3 {
+    color: #ffffff;
+}
+
+.register-form {
+    * {
+        font-size: 18px;
+        color: rgba(139, 139, 139, 1);
+    }
+    background-image: url('../../img/register-form/background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+
+    .register-application {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        h1 {
+            font-family: Roboto;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 42px;
+            color: #ffffff;
+        }
+
+        &-paragraph {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: #ffffff;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 16px;
+            border-radius: 16px;
+            gap: 24px;
+            background-color: #ffffff;
+
+            &__data {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 12px;
+
+                input {
+                    width: 74vw;
+                    display: flex;
+                    border-radius: 8px;
+                    border: rgba(204, 204, 204, 1) 1px solid;
+                    padding: 10px;
+                    gap: 10px;
+
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: rgba(51, 51, 51, 1);
+                }
+
+                .number-sex {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    input {
+                        width: 74vw;
+                        display: flex;
+                        border-radius: 8px;
+                        border: rgba(204, 204, 204, 1) 1px solid;
+                        padding: 10px;
+                        gap: 10px;
+
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        color: rgba(51, 51, 51, 1);
+                    }
+
+                    select {
+                        display: flex;
+                        border-radius: 8px;
+                        border: rgba(204, 204, 204, 1) 1px solid;
+                        padding: 10px;
+                        gap: 10px;
+                        width: 80vw;
+                    }
+                }
+            }
+
+            &__direction {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 12px;
+
+                h3 {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    color: #333333;
+                }
+
+                select {
+                    display: flex;
+                    border-radius: 8px;
+                    border: rgba(204, 204, 204, 1) 1px solid;
+                    padding: 10px;
+                    gap: 10px;
+                    width: 80vw;
+                }
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                padding: 12px 52px;
+                gap: 10px;
+                background-color: rgba(31, 131, 249, 1);
+                border: none;
+                width: 80vw;
+
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                color: #ffffff;
+
+                transition: background-color 0.2s ease-in;
+                &:hover {
+                    transition: background-color 0.2s ease-in;
+                    background: rgba(0, 93, 203, 1);
+                }
+            }
+        }
+        .application-count {
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            gap: 24px;
+
+            .count {
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 16px;
+                padding: 16px;
+                gap: 16px;
+
+                .blink {
+                    p {
+                        font-family: Roboto;
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 33px;
+
+                        color: #333333;
+                    }
+                    color: #333333;
+                    animation: blink 2s linear infinite; /* Параметры анимации */
+                }
+                @keyframes blink {
+                    0% {
+                        opacity: 1;
+                    }
+                    50% {
+                        opacity: 0.7;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            h1 {
+                font-family: Roboto;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 33px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 1vw;
+    }
+
+    .register-form {
+        * {
+            color: #333333;
+            font-size: 1.125vw;
+            font-weight: 400;
+            line-height: 1.3125;
+        }
+        ::placeholder {
+            font-family: Roboto;
+            font-size: 1.125vw;
+            font-weight: 400;
+            line-height: 1.3125;
+        }
+
+        background-image: url('../../img/register-form/background-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 5vw 11.25vw 5vw 11.25vw;
+        gap: 2.5vw;
+        height: 27.8125vw;
+
+        .register-application {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: start;
+            gap: 2.5vw;
+            width: 43.75vw;
+            padding: 1.25vw 0vw;
+
+            h1 {
+                font-family: Roboto;
+                font-size: 3.75vw;
+                font-weight: 400;
+                line-height: 4.375vw;
+            }
+
+            &-paragraph {
+                bottom: -2.625vw;
+                position: absolute;
+                font-family: Roboto;
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 1.437vw;
+            }
+
+            .form {
+                display: flex;
+                position: absolute;
+                right: -33.75vw;
+                top: 0vw;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2.5vw 2vw;
+                border-radius: 1vw;
+                gap: 1.5vw;
+                background-color: #ffffff;
+
+                &__data {
+                    gap: 1vw;
+
+                    input {
+                        width: 25.15vw;
+                        display: flex;
+                        border-radius: 0.5vw;
+                        border: rgba(204, 204, 204, 1) 1px solid;
+                        padding: 0.75vw 1vw;
+                        gap: 0.625vw;
+
+                        font-family: Roboto;
+                        font-size: 1.125vw;
+                        font-weight: 400;
+                        line-height: 1.131vw;
+                    }
+
+                    .number-sex {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1.5vw;
+                        input {
+                            width: 10.78vw;
+                            border-radius: 0.5vw;
+                            border: rgba(204, 204, 204, 1) 1px solid;
+                            padding: 0.75vw 1vw;
+                            gap: 0.625vw;
+
+                            font-family: Roboto;
+                            font-size: 1.125vw;
+                            font-weight: 400;
+                            line-height: 1.131vw;
+                        }
+
+                        select {
+                            border-radius: 0.5vw;
+                            padding: 0.75vw 1vw;
+                            gap: 0.625vw;
+                            width: 12.9vw;
+                        }
+                    }
+                }
+
+                &__direction {
+                    gap: 1vw;
+
+                    h3 {
+                        font-family: Roboto;
+                        font-size: 1.125vw;
+                        font-weight: 400;
+                        line-height: 1.131vw;
+                        color: rgba(51, 51, 51, 1);
+                    }
+
+                    select {
+                        border-radius: 0.5vw;
+                        padding: 0.75vw 1vw;
+                        gap: 0.625vw;
+                        width: 27vw;
+                    }
+                }
+                button {
+                    border-radius: 0.5vw;
+                    padding: 1.25vw 3.25vw;
+                    gap: 0.625vw;
+                    width: 27.15vw;
+
+                    font-family: Roboto;
+                    font-size: 1.25vw;
+                    font-weight: 500;
+                    line-height: 1.465vw;
+                }
+            }
+            .application-count {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: row;
+                gap: 1.5vw;
+
+                .count {
+                    background-color: #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 1vw;
+                    padding: 1vw 1.3vw 1vw 1vw;
+                    gap: 0.625vw;
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 3rem;
+                        font-weight: 600;
+                        line-height: 3.625vw;
+                    }
+                }
+
+                h1 {
+                    font-family: Roboto;
+                    font-size: 1.875rem;
+                    font-weight: 400;
+                    line-height: 2.1875vw;
+                }
+            }
+        }
+    }
+}
