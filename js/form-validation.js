@@ -1,5 +1,5 @@
 const initPageLogic = () => {
-    const validate = (input, alert, text, validate) => {
+    const validate = (input, alert, text, validate = true) => {
         if (!validate) {
             input.classList.add('validate')
             alert.innerHTML = text
@@ -71,16 +71,13 @@ const initPageLogic = () => {
         const input = event.target
         const email = input.value
         let alert = input.nextSibling.nextSibling
-
-        validate(input, alert, 'Некорректные символы', emailValidate(email))
-        if (!emailValidate(email)) {
-            alert.innerHTML = 'Некорректные символы'
-            input.classList.add('validate')
-        } else {
-            alert.innerHTML = ''
-            input.classList.remove('validate')
-        }
+        if (email == '') {
+            validate(input, alert, 'Заполните поле', emailValidate(email))
+        } else
+            validate(input, alert, 'Некорректные символы', emailValidate(email))
     }
+
+    const selectCurse = (event) => {}
 
     const emailInput = document.querySelector('.email')
     emailInput.addEventListener('blur', emailEvent)
