@@ -23,8 +23,8 @@
                     </div>
                     <div class="number-sex">
                         <div class="sex-block">
-                            <div class="dropddown">
-                                <button class="dropdown__button">
+                            <div class="dropddown-sex">
+                                <button class="dropdown__button-sex">
                                         Пол
                                     </button>
                                 <ul class="dropdown__list">
@@ -56,27 +56,41 @@
                         <div class="alert"></div>
                     </div>
                 </div>
-                <div class="form__direction">
+                <form class="form__direction">
                     <h3>Выберите интересующие курсы:</h3>
-                    <button class="dropdown__button">Выберите курсы</button>
-                    <ul class="dropdown__list">
-                        <li class="dropdown__list-item" data-value="new">
-                            <input type="checkbox" name="" id="" />
+                    <button class="dropdown__button-direction">
+                            Выберите курсы
+                        </button>
+                    <ul class="dropdown__list-direction">
+                        <li class="dropdown__list-item-direction" data-value="dev">
+                            <input type="checkbox" name="developer" id="developer" data-value="dev" />
+                            <label for="developer" data-value="dev">Developer</label
+                                >
+                            </li>
+                            <li
+                                class="dropdown__list-item-direction"
+                                data-value="QA"
+                            >
+                                <input
+                                    type="checkbox"
+                                    name="QA"
+                                    id="QA"
+                                    data-value="QA"
+                                />
+                                <label for="QA">QA</label>
                         </li>
-                        <li class="dropdown__list-item" data-value="processing">
-                            <input type="checkbox" name="" id="" />
-                        </li>
-                        <li class="dropdown__list-item" data-value="denied">
-                            <input type="checkbox" name="" id="" />
+                        <li class="dropdown__list-item-direction" data-value="PM">
+                            <input type="checkbox" name="PM" id="PM" data-value="PM" />
+                            <label for="PM" data-value="PM">PM</label>
                         </li>
                     </ul>
-                    <input id="dropdown__input-heddin" type="text" name="select-status" value="" class="dropdown__input-heddin" />
+                    <input id="dropdown__input-direction-heddin" type="text" name="select-status" value="" class="dropdown__input-direction-heddin" />
                     <!-- <select name="" id="">
                             <option value="" disabled selected>
                                 Выберите курсы
                             </option>
                         </select> -->
-                </div>
+                </form>
                 <button class="button">Принять участие</button>
             </div>
             <p class="register-application-paragraph">
