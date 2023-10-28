@@ -493,13 +493,14 @@ body {
     display: flex;
     justify-content: center;
     // height: 1275px;
-    gap: 30px;
+    
     // padding: 100px 180px 120px 180px;
     .content {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         padding: 40px 20px;
+        gap: 30px;
         max-width: 388px;
         h3 {
             font-family: Roboto;
