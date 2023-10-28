@@ -34,10 +34,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // width: 258px;
-
-    // height: 83px;
-    // margin-bottom: 40px;
 }
 
 .text__numbers {
@@ -119,7 +115,6 @@ html {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        gap: -4px;
     }
 
     .statistic {
@@ -487,7 +482,6 @@ body {
         flex-direction: column;
         padding: 11.1vw 5.5vw;
         gap: 8.3vw;
-        // max-width: 388px;
         h3 {
             font-family: Roboto;
             font-size: 8.8rem;
@@ -496,15 +490,12 @@ body {
             margin: 0;
         }
         .cards {
-            // max-width: 320px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
             gap: 5.5vw;
-            // min-height: 1089px;
             .card {
-                // max-width: 320px;
                 display: flex;
                 flex-direction: column;
                 background-color: #dff6fe;
@@ -514,12 +505,10 @@ body {
                 span {
                     margin: 0;
                     padding: 1.1vw 5.5vw;
-                    // background-color: #66acff;
                     background-color: #66acff;
                     border-radius: 0px 2.2vw 2.2vw 0px;
                     gap: 2.7vw;
                     margin-left: -5.5vw;
-                    // width: 200px;
                     font-family: Roboto;
                     font-size: 5.5rem;
                     font-weight: 400;
@@ -539,7 +528,6 @@ body {
                         margin-top: 3.3vw;
                     }
                     img {
-                        // max-width: 120px;
                         width: 33.3vw;
                         align-self: flex-end;
                     }
@@ -569,13 +557,10 @@ body {
         align-items: center;
         justify-content: center;
         padding: 6.25vw 11.25vw 7.5vw 11.25vw;
-        // height: 800px;
-        // gap: 42px;
         .content {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            // margin-left: 20vh;
             gap: 2.5vw;
             padding: 0px 0px;
             width: 77vw;
@@ -596,31 +581,25 @@ body {
                 height: 33vw;
                 min-height: auto;
                 .card {
-                    // display: flex;
                     flex-direction: column;
                     max-width: 24.2vw;
                     background-color: #dff6fe;
-                    border-radius: 16px;
+                    border-radius: 1vw;
                     padding: 2vw 2vw 1.4vw 2vw;
-                    gap: 16px;
+                    gap: 1vw;
                     max-height: 30vw;
                     height: 30vw;
                     span {
                         margin: 0;
-                        padding: 4px 2vw;
-                        // background-color: #66acff;
+                        padding: 0.25vw 2vw;
                         background-color: #66acff;
-                        border-radius: 0px 8px 8px 0px;
-                        gap: 10px;
+                        border-radius: 0px 0.5vw 0.5vw 0px;
+                        gap: 0.625vw;
                         margin-left: -2vw;
-                        // width: 200px;
                         font-family: Roboto;
                         font-size: 1.7rem;
                         font-weight: 400;
                         line-height: 2vw;
-                        letter-spacing: 0em;
-                        text-align: left;
-                        text-align: left;
                         color: white;
                         display: inline-block;
                     }
@@ -784,9 +763,7 @@ body {
 
         .reviews__slider {
             background-color: white;
-            // margin: 0px 4.4vw 0px 4.4vw;
             border-radius: 2.7vw;
-            // height: 480px;
 
             .reviews__slider-bar-head-img-big {
                 display: none;
@@ -811,13 +788,10 @@ body {
                         display: flex;
                         flex-direction: column;
                         gap: 2.2vw;
-                        // margin-left: 4.4vw;
-                        // padding-right: 5.83vw;
 
                         .reviews__slider-bar-head-text-name {
                             font-size: 6.6rem;
                             font-weight: bold;
-                            // margin: 0px 0px 2.7vw 0px;
                         }
 
                         .reviews__slider-bar-head-text-discription {
@@ -831,10 +805,6 @@ body {
             .reviews__slider-bar-main {
                 font-size: 4.72rem;
                 font-weight: 400;
-
-                .reviews__slider-bar-main-text {
-                    // margin-bottom: 2.78vw;
-                }
             }
         }
 
@@ -845,7 +815,6 @@ body {
     }
 
     .reviews__slider-bar-checkboxes {
-        // margin: 5.5vw 5.5vw;
         display: flex;
         gap: 5.5vw;
 
@@ -1004,7 +973,6 @@ body {
             align-items: center;
             justify-content: center;
             width: 98vw;
-            // min-width: 1100px;
 
             .reviews__slider-box-arrow {
                 display: flex;
