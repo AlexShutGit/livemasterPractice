@@ -236,7 +236,7 @@ h3 {
             font-weight: 400;
             line-height: 1.3125;
         }
-         ::placeholder {
+        ::placeholder {
             font-family: Roboto;
             font-size: 1.125vw;
             font-weight: 400;
@@ -400,5 +400,30 @@ h3 {
                 }
             }
         }
+    }
+    .dropdown__list-direction {
+        position: relative;
+    }
+
+    .dropdown__content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .dropdown__content.show {
+        display: block;
+    }
+
+    .alert {
+        color: red;
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
     }
 }
