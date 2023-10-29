@@ -21,7 +21,8 @@ const initPageLogica = () => {
         '.dropdown__input-direction-heddin'
     )
 
-    dropDownButton.addEventListener('click', () => {
+    dropDownButton.addEventListener('click', (event) => {
+        event.preventDefault()
         dropDownList.classList.toggle('dropdown__list--visible')
     })
 
@@ -47,12 +48,12 @@ const initPageLogica = () => {
             elem.stopPropagation()
             input = elem.currentTarget.querySelector('input')
             input.checked = !input.checked
-            buttonText = dropDownButtonDirection.innerHTML
             labelText = elem.currentTarget.querySelector('label').innerText
-            if (buttonText.includes('Выберите курсы')) {
-                buttonText = labelText
+            if (dropDownButtonDirection.innerHTML.includes('Выберите курсы')) {
+                dropDownButtonDirection.innerHTML = labelText
             } else {
-                buttonText = buttonText.concat(', ' + labelText)
+                dropDownButtonDirection.innerHTML =
+                    dropDownButtonDirection.innerHTML.concat(', ' + labelText)
             }
             dropDownButtonDirection.classList.add('picked')
             dropDownInputDirection.value = elem.currentTarget.dataset.value

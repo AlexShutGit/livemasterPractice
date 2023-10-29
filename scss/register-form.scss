@@ -130,6 +130,7 @@ h3 {
                 }
             }
             &__direction {
+                position: relative;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
