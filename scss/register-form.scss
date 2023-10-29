@@ -56,13 +56,13 @@ h3 {
             align-items: center;
             padding: 20px 16px;
             border-radius: 16px;
-            gap: 24px;
+            gap: 20px;
             background-color: #ffffff;
             &__data {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-                gap: 4px;
+                gap: 11px;
                 input {
                     width: 74vw;
                     display: flex;
@@ -79,31 +79,24 @@ h3 {
                 .validate {
                     border: rgba(210, 17, 17, 1) 1px solid;
                 }
-                .alert {
-                    color: rgba(210, 17, 17, 1);
-                    font-family: Roboto;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 16px;
-                }
                 .name-block {
                     display: flex;
                     flex-direction: column;
-                    gap: 8px;
+                    // gap: 8px;
                 }
                 .number-sex {
                     display: flex;
                     flex-direction: column;
-                    gap: 12px;
+                    // gap: 12px;
                     .number-block {
                         display: flex;
                         flex-direction: column;
-                        gap: 8px;
+                        // gap: 8px;
                     }
                     .sex-block {
                         display: flex;
                         flex-direction: column;
-                        gap: 8px;
+                        // gap: 8px;
                     }
                     input {
                         width: 74vw;
@@ -133,14 +126,14 @@ h3 {
                 .email-block {
                     display: flex;
                     flex-direction: column;
-                    gap: 8px;
+                    // gap: 8px;
                 }
             }
             &__direction {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-                gap: 12px;
+                // gap: 12px;
                 h3 {
                     font-family: Roboto;
                     font-size: 16px;
@@ -232,13 +225,13 @@ h3 {
     .register-form {
         * {
             color: #333333;
-            font-size: 1.125vw;
+            font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.3125;
         }
         ::placeholder {
             font-family: Roboto;
-            font-size: 1.125vw;
+            font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.3125;
         }
@@ -262,7 +255,7 @@ h3 {
             padding: 1.25vw 0vw;
             h1 {
                 font-family: Roboto;
-                font-size: 3.75vw;
+                font-size: 3.75rem;
                 font-weight: 400;
                 line-height: 4.375vw;
             }
@@ -287,7 +280,7 @@ h3 {
                 gap: 1.5vw;
                 background-color: #ffffff;
                 &__data {
-                    gap: 1vw;
+                    // gap: 1vw;
                     input {
                         width: 25.15vw;
                         display: flex;
@@ -296,27 +289,19 @@ h3 {
                         padding: 0.75vw 1vw;
                         gap: 0.625vw;
                         font-family: Roboto;
-                        font-size: 1.125vw;
+                        font-size: 1.125rem;
                         font-weight: 400;
                         line-height: 1.131vw;
                     }
                     .alert {
                         color: rgba(210, 17, 17, 1);
                         font-family: Roboto;
-                        font-size: 1vw;
+                        font-size: 1rem;
                         font-weight: 400;
                         line-height: 1vw;
-                    }
-                    .name-block {
-                        gap: 0.2vw;
+                        margin-top: 5px;
                     }
                     .number-sex {
-                        .number-block {
-                            gap: 0.2vw;
-                        }
-                        .sex-block {
-                            gap: 0.2vw;
-                        }
                         display: flex;
                         flex-direction: row;
                         gap: 1.5vw;
@@ -327,7 +312,7 @@ h3 {
                             padding: 0.75vw 1vw;
                             gap: 0.625vw;
                             font-family: Roboto;
-                            font-size: 1.125vw;
+                            font-size: 1.125rem;
                             font-weight: 400;
                             line-height: 1.131vw;
                         }
@@ -341,16 +326,17 @@ h3 {
                     .email-block {
                         display: flex;
                         flex-direction: column;
-                        gap: 0.2vw;
+                        // gap: 0.2vw;
                     }
                 }
                 &__direction {
-                    gap: 1vw;
+                    // gap: 1vw;
                     h3 {
                         font-family: Roboto;
-                        font-size: 1.125vw;
+                        font-size: 1.125rem;
                         font-weight: 400;
                         line-height: 1.131vw;
+                        margin-bottom: 13px;
                         color: rgba(51, 51, 51, 1);
                     }
                     select {
@@ -366,7 +352,7 @@ h3 {
                     gap: 0.625vw;
                     width: 27.15vw;
                     font-family: Roboto;
-                    font-size: 1.25vw;
+                    font-size: 1.25rem;
                     font-weight: 500;
                     line-height: 1.465vw;
                 }
@@ -417,13 +403,5 @@ h3 {
 
     .dropdown__content.show {
         display: block;
-    }
-
-    .alert {
-        color: red;
-        margin-top: 5px;
-        font-size: 12px;
-        font-weight: bold;
-        text-align: left;
     }
 }

@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/css/register-form.css" />
+        <link rel="stylesheet" href="../static/css/select.css" />
+        <script src="../js/form-validation.js"></script>
+        <script src="../js/select.js"></script>
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/register-form.css" />
-    <link rel="stylesheet" href="../static/css/select.css" />
-    <script src="../js/form-validation.js"></script>
-    <script src="../js/select.js"></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="register-form">
-        <div class="register-application">
-            <h1>Оставьте заявку на участие в Практикуме*</h1>
-            <div class="form">
-                <div class="form__data">
-                    <div class="name-block">
-                        <input data-input class="name" placeholder="Имя" type="text" required />
-                        <div class="alert"></div>
-                    </div>
-                    <div class="number-sex">
-                        <div class="sex-block">
-                            <div class="dropddown-sex">
-                                <button class="dropdown__button-sex">
+    <body>
+        <div class="register-form">
+            <div class="register-application">
+                <h1>Оставьте заявку на участие в Практикуме*</h1>
+                <form class="form">
+                    <div class="form__data">
+                        <div class="name-block">
+                            <input
+                                data-input
+                                class="name"
+                                placeholder="Имя"
+                                type="text"
+                                required
+                            />
+                            <div class="alert"></div>
+                        </div>
+                        <div class="number-sex">
+                            <div class="sex-block">
+                                <div class="dropddown-sex">
+                                    <button class="dropdown__button-sex">
                                         Пол
                                     </button>
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__list-item" data-value="new">
-                                        Женский
-                                    </li>
-                                    <li class="dropdown__list-item" data-value="processing">
-                                        Мужской
-                                    </li>
-                                    <li class="dropdown__list-item" data-value="denied">
-                                        Не указан
-                                    </li>
-                                </ul>
-                                <input id="dropdown__input-heddin" type="text" name="select-status" value="" class="dropdown__input-heddin" />
-                            </div>
-                            <!-- <select name="" id="">
+                                    <ul class="dropdown__list">
+                                        <li
+                                            class="dropdown__list-item"
+                                            data-value="new"
+                                        >
+                                            Женский
+                                        </li>
+                                        <li
+                                            class="dropdown__list-item"
+                                            data-value="processing"
+                                        >
+                                            Мужской
+                                        </li>
+                                        <li
+                                            class="dropdown__list-item"
+                                            data-value="denied"
+                                        >
+                                            Не указан
+                                        </li>
+                                    </ul>
+                                    <input
+                                        id="dropdown__input-heddin"
+                                        type="text"
+                                        name="select-status"
+                                        value=""
+                                        class="dropdown__input-heddin"
+                                    />
+                                </div>
+                                <!-- <select name="" id="">
                                     <option value="" disabled selected>
                                         Пол
                                     </option>
                                 </select> -->
+                            </div>
+                            <div class="number-block">
+                                <input
+                                    data-input
+                                    class="number"
+                                    placeholder="+7 (___) ___-__-__"
+                                    type="tel"
+                                    maxlength="17"
+                                    required
+                                />
+                                <div class="alert"></div>
+                            </div>
                         </div>
-                        <div class="number-block">
-                            <input data-input class="number" placeholder="+7 (___) ___-__-__" type="tel" maxlength="17" required />
+                        <div class="email-block">
+                            <input
+                                data-input
+                                class="email"
+                                placeholder="Электронная почта"
+                                type="email"
+                                required
+                            />
                             <div class="alert"></div>
                         </div>
                     </div>
-                    <div class="email-block">
-                        <input data-input class="email" placeholder="Электронная почта" type="email" required />
-                        <div class="alert"></div>
-                    </div>
-                </div>
-                <form class="form__direction">
-                    <h3>Выберите интересующие курсы:</h3>
-                    <button class="dropdown__button-direction">
+                    <div class="form__direction">
+                        <h3>Выберите интересующие курсы:</h3>
+                        <button class="dropdown__button-direction">
                             Выберите курсы
                         </button>
-                    <ul class="dropdown__list-direction">
-                        <li class="dropdown__list-item-direction" data-value="dev">
-                            <input type="checkbox" name="developer" id="developer" data-value="dev" />
-                            <label for="developer" data-value="dev">Developer</label
+                        <ul class="dropdown__list-direction">
+                            <li
+                                class="dropdown__list-item-direction"
+                                data-value="dev"
+                            >
+                                <input
+                                    type="checkbox"
+                                    name="developer"
+                                    id="developer"
+                                    data-value="dev"
+                                />
+                                <label for="developer" data-value="dev"
+                                    >Developer</label
                                 >
                             </li>
                             <li
@@ -78,32 +120,46 @@
                                     data-value="QA"
                                 />
                                 <label for="QA">QA</label>
-                        </li>
-                        <li class="dropdown__list-item-direction" data-value="PM">
-                            <input type="checkbox" name="PM" id="PM" data-value="PM" />
-                            <label for="PM" data-value="PM">PM</label>
-                        </li>
-                    </ul>
-                    <input id="dropdown__input-direction-heddin" type="text" name="select-status" value="" class="dropdown__input-direction-heddin" />
-                    <!-- <select name="" id="">
+                            </li>
+                            <li
+                                class="dropdown__list-item-direction"
+                                data-value="PM"
+                            >
+                                <input
+                                    type="checkbox"
+                                    name="PM"
+                                    id="PM"
+                                    data-value="PM"
+                                />
+                                <label for="PM" data-value="PM">PM</label>
+                            </li>
+                        </ul>
+                        <div class="alert"></div>
+                        <input
+                            id="dropdown__input-direction-heddin"
+                            type="text"
+                            name="select-status"
+                            value=""
+                            class="dropdown__input-direction-heddin"
+                        />
+                        <!-- <select name="" id="">
                             <option value="" disabled selected>
                                 Выберите курсы
                             </option>
                         </select> -->
+                    </div>
+                    <button class="button">Принять участие</button>
                 </form>
-                <button class="button">Принять участие</button>
-            </div>
-            <p class="register-application-paragraph">
-                *Количество мест ограничено
-            </p>
-            <div class="application-count">
-                <div class="count">
-                    <p class="blink">15</p>
+                <p class="register-application-paragraph">
+                    *Количество мест ограничено
+                </p>
+                <div class="application-count">
+                    <div class="count">
+                        <p class="blink">15</p>
+                    </div>
+                    <h1>Заявок оставлено</h1>
                 </div>
-                <h1>Заявок оставлено</h1>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

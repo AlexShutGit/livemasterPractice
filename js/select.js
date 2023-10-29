@@ -35,7 +35,6 @@ const initPageLogica = () => {
     dropDownListItems.forEach((Item) => {
         Item.addEventListener('click', (elem) => {
             elem.stopPropagation()
-            console.log(elem.target)
             dropDownButton.innerHTML = elem.target.innerText
             dropDownButton.classList.add('picked')
             dropDownInput.value = elem.target.dataset.value
@@ -46,12 +45,18 @@ const initPageLogica = () => {
     dropDownListItemsDirection.forEach((Item) => {
         Item.addEventListener('click', (elem) => {
             elem.stopPropagation()
-            dropDownButtonDirection.innerHTML =
-                elem.target.offsetParent.querySelector('label').innerText
+            input = elem.currentTarget.querySelector('input')
+            input.checked = !input.checked
+            buttonText = dropDownButtonDirection.innerHTML
+            labelText = elem.currentTarget.querySelector('label').innerText
+            if (buttonText.includes('Выберите курсы')) {
+                buttonText = labelText
+            } else {
+                buttonText = buttonText.concat(', ' + labelText)
+            }
             dropDownButtonDirection.classList.add('picked')
-            console.log(elem.target.dataset.value)
-            dropDownInputDirection.value = elem.target.dataset.value
-                // dropDownListDirection.classList.remove('dropdown__list--visible')
+            dropDownInputDirection.value = elem.currentTarget.dataset.value
+            // dropDownListDirection.classList.remove('dropdown__list--visible')
         })
     })
 

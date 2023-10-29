@@ -3,12 +3,12 @@ const initPageLogic = () => {
         if (!validate) {
             input.classList.add('validate')
             alert.innerHTML = text
-            alert.style.display = 'block'
-            alert.style.color = 'red'
-            alert.style.marginTop = '5px'
-            alert.style.fontSize = '12px'
-            alert.style.fontWeight = 'bold'
-            alert.style.textAlign = 'left'
+            // alert.style.display = 'block'
+            // alert.style.color = 'red'
+            // alert.style.marginTop = '5px'
+            // alert.style.fontSize = '12px'
+            // alert.style.fontWeight = 'bold'
+            // alert.style.textAlign = 'left'
         } else {
             alert.innerHTML = ''
             input.classList.remove('validate')
@@ -99,13 +99,13 @@ const initPageLogic = () => {
         const options = select.querySelectorAll(
             'input[type="checkbox"]:checked'
         )
-        const alert = select.previousSibling.previousSibling
+        // const alert = select.previousSibling.previousSibling
 
         if (options.length === 0) {
-            validate(select, alert, 'Выберите хоть один курс', false)
-            alert.style.marginTop = '10px'
+            // validate(select, alert, 'Выберите хоть один курс', false)
+            // alert.style.marginTop = '10px'
         } else {
-            validate(select, alert, '', true)
+            // validate(select, alert, '', true)
         }
     }
 
