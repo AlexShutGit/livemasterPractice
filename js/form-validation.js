@@ -3,12 +3,12 @@ const initPageLogic = () => {
         if (!validate) {
             input.classList.add('validate')
             alert.innerHTML = text
-            // alert.style.display = 'block'
-            // alert.style.color = 'red'
-            // alert.style.marginTop = '5px'
-            // alert.style.fontSize = '12px'
-            // alert.style.fontWeight = 'bold'
-            // alert.style.textAlign = 'left'
+                // alert.style.display = 'block'
+                // alert.style.color = 'red'
+                // alert.style.marginTop = '5px'
+                // alert.style.fontSize = '12px'
+                // alert.style.fontWeight = 'bold'
+                // alert.style.textAlign = 'left'
         } else {
             alert.innerHTML = ''
             input.classList.remove('validate')
@@ -93,28 +93,6 @@ const initPageLogic = () => {
         const regular = /\S+@\S+\.\S+/
         return regular.test(email)
     }
-
-    const validateSelect = () => {
-        const select = document.querySelector('.dropdown__list-direction')
-        const options = select.querySelectorAll(
-            'input[type="checkbox"]:checked'
-        )
-        // const alert = select.previousSibling.previousSibling
-
-        if (options.length === 0) {
-            // validate(select, alert, 'Выберите хоть один курс', false)
-            // alert.style.marginTop = '10px'
-        } else {
-            // validate(select, alert, '', true)
-        }
-    }
-
-    const checkboxes = document.querySelectorAll(
-        '.dropdown__list-direction input[type="checkbox"]'
-    )
-    checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener('change', validateSelect)
-    })
 }
 
 document.addEventListener('DOMContentLoaded', initPageLogic)

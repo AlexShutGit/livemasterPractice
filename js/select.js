@@ -42,22 +42,41 @@ const initPageLogica = () => {
             dropDownList.classList.remove('dropdown__list--visible')
         })
     })
-
+    let courses = []
     dropDownListItemsDirection.forEach((Item) => {
         Item.addEventListener('click', (elem) => {
             elem.stopPropagation()
-            input = elem.currentTarget.querySelector('input')
-            input.checked = !input.checked
-            labelText = elem.currentTarget.querySelector('label').innerText
-            if (dropDownButtonDirection.innerHTML.includes('Выберите курсы')) {
-                dropDownButtonDirection.innerHTML = labelText
+            const input = elem.currentTarget.querySelector('input')
+            const labelText = elem.currentTarget.querySelector('span').innerText
+            const alert =
+                elem.currentTarget.offsetParent.offsetParent.querySelector(
+                    'div'
+                )
+            if (elem.target !== input) input.checked = !input.checked
+
+            if (!courses.includes(labelText)) courses.push(labelText)
+            else courses = courses.filter((elem) => elem !== labelText)
+
+            if (dropDownButtonDirection.innerHTML.includes('Выберите курсы'))
+                dropDownButtonDirection.classList.add('picked')
+
+            let string = ''
+            courses.forEach((course) => {
+                if (string === '') string = string.concat(course)
+                else string = string.concat(', ' + course)
+            })
+
+            if (string !== '') {
+                dropDownButtonDirection.innerHTML = string
+                dropDownButtonDirection.classList.remove('validate')
             } else {
-                dropDownButtonDirection.innerHTML =
-                    dropDownButtonDirection.innerHTML.concat(', ' + labelText)
+                dropDownButtonDirection.innerHTML = 'Выберите курсы'
+                dropDownButtonDirection.classList.remove('picked')
+                alert.innerHTML = 'Выберите хотя бы один курс'
+                dropDownButtonDirection.classList.add('validate')
+                    // alert
             }
-            dropDownButtonDirection.classList.add('picked')
-            dropDownInputDirection.value = elem.currentTarget.dataset.value
-            // dropDownListDirection.classList.remove('dropdown__list--visible')
+            dropDownInputDirection.value = string
         })
     })
 
@@ -71,7 +90,9 @@ const initPageLogica = () => {
 
     document.addEventListener('click', (elem) => {
         if (elem.target !== dropDownButtonDirection) {
-            dropDownListDirection.classList.remove('dropdown__list--visible')
+            dropDownListDirection.classList.remove(
+                'dropdown__list-direction--visible'
+            )
         }
     })
 }
