@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 html {
     font-size: 1vw;
 }
 
 .register-form {
+    hr {
+    position: absolute;
+    bottom: 0px;
+    width: 88.8vw;
+    height: 0.27vw;
+    background-color: rgba(212, 214, 222, 1);
+}
+    position: relative;
     * {
         margin: 0;
         // padding: 0;
@@ -18,7 +26,7 @@ html {
         font-size: 5rem;
         color: #8b8b8b;
     }
-    background-image: url("../../img/register-form/background-mobile.png");
+    background-image: url('../../img/register-form/background-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -222,20 +230,19 @@ html {
         background-color: rgba(212, 214, 222, 1);
     }
     .register-form {
-        position: relative;
         * {
             color: #8b8b8b;
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.3125;
         }
-         ::placeholder {
+        ::placeholder {
             font-family: Roboto;
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.3125;
         }
-        background-image: url("../../img/register-form/background-desktop.png");
+        background-image: url('../../img/register-form/background-desktop.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

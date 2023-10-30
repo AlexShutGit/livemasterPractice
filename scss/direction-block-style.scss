@@ -236,12 +236,13 @@ body {
                     }
                 }
                 transition: background-color 0.1s ease-in,
-                transform 0.1s ease-in;
+                    transform 0.1s ease-in;
                 &:hover {
                     cursor: pointer;
                     background-color: #c6e8ff;
                     transform: scale(1.02);
-                    transition: background-color 0.1s ease-in, transform 0.1s ease-in;
+                    transition: background-color 0.1s ease-in,
+                        transform 0.1s ease-in;
                 }
             }
         }
@@ -279,7 +280,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 1vw;
-     :last-child {
+    :last-child {
         margin: 0;
         display: flex;
         color: #fff;
@@ -307,7 +308,7 @@ body {
     line-height: normal;
     width: 21.8125vw;
     gap: 1vw;
-     :last-child {
+    :last-child {
         margin: 0;
         color: #fff;
         font-family: Roboto;
@@ -344,7 +345,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .footer {
         display: flex;
         flex-direction: column;
@@ -369,7 +370,7 @@ body {
         font-weight: 700;
         line-height: normal;
         gap: 4.4444vw;
-         :last-child {
+        :last-child {
             margin: 0;
             width: 88.8888vw;
             color: #fff;
@@ -395,7 +396,7 @@ body {
         font-weight: 400;
         line-height: normal;
         gap: 4.4444vw;
-         :last-child {
+        :last-child {
             margin: 0;
             color: #fff;
             font-family: Roboto;
@@ -1022,8 +1023,16 @@ html {
 html {
     font-size: 1vw;
 }
+hr {
+    position: absolute;
+    bottom: 0px;
+    width: 88.8vw;
+    height: 0.27vw;
+    background-color: rgba(212, 214, 222, 1);
+}
 
 .register-form {
+    position: relative;
     * {
         margin: 0;
         // padding: 0;
@@ -1082,9 +1091,9 @@ html {
             .alert {
                 color: rgba(210, 17, 17, 1);
                 font-family: Roboto;
-                font-size: 1rem;
+                font-size: 4.4rem;
                 font-weight: 400;
-                line-height: 1vw;
+                line-height: 4.558vw;
                 margin-top: 1.38vw;
             }
             &__data {
@@ -1093,7 +1102,7 @@ html {
                 flex-direction: column;
                 gap: 3.05vw;
                 input {
-                    width: 74vw;
+                    width: 80vw;
                     display: flex;
                     border-radius: 2.2vw;
                     border: rgba(204, 204, 204, 1) 1px solid;
@@ -1126,7 +1135,7 @@ html {
                         // gap: 8px;
                     }
                     input {
-                        width: 74vw;
+                        width: 80vw;
                         display: flex;
                         border-radius: 2.2vw;
                         border: rgba(204, 204, 204, 1) 1px solid;
@@ -1249,7 +1258,7 @@ html {
             font-weight: 400;
             line-height: 1.3125;
         }
-         ::placeholder {
+        ::placeholder {
             font-family: Roboto;
             font-size: 1.125rem;
             font-weight: 400;
@@ -1423,29 +1432,28 @@ html {
 .dropdown__button-sex {
     position: relative;
     display: flex;
-    width: 13.5vw;
+    width: 80vw;
     text-align: left;
     background: white;
-    gap: 0.625vw;
+    gap: 2.7vw;
     border: rgba(204, 204, 204, 1) 1px solid;
-    border-radius: 0.5vw;
-    height: 3vw;
+    border-radius: 2.2vw;
     align-items: center;
     color: #8b8b8b;
-    padding: 0.75vw 1vw;
+    padding: 2.7vw;
     font-family: Roboto;
-    font-size: 1.125vw;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 1.131vw;
+    line-height: 5.83vw;
     cursor: pointer;
 }
 
 .dropdown__button-sex::after {
     content: url(../../img/register-form/select.png);
     position: absolute;
-    top: 1.5vw;
+    top: 6.5vw;
     width: 1vw;
-    right: 1vw;
+    right: 6vw;
     transform: translateY(-50%);
     pointer-events: none;
     object-fit: cover;
@@ -1454,7 +1462,7 @@ html {
 .dropdown__list {
     display: none;
     position: absolute;
-    top: 10.3vw;
+    top: 87vw;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -1462,7 +1470,7 @@ html {
     box-shadow: 0px 4px 8px grey;
     overflow: hidden;
     border-radius: 6px;
-    width: 12.5vw;
+    width: 80vw;
     z-index: 1;
 }
 
@@ -1474,6 +1482,7 @@ html {
     margin: 0px;
     padding: 0px;
     padding: 1vw;
+    color: #333333;
     cursor: pointer;
 }
 
@@ -1492,29 +1501,28 @@ html {
 .dropdown__button-direction {
     position: relative;
     display: flex;
-    width: 27vw;
+    width: 80vw;
     text-align: left;
     background: white;
-    gap: 0.625vw;
+    gap: 2.7vw;
     border: rgba(204, 204, 204, 1) 1px solid;
-    border-radius: 0.5vw;
-    height: 3vw;
+    border-radius: 2.2vw;
     align-items: center;
     color: #8b8b8b;
-    padding: 0.75vw 1vw;
+    padding: 2.7vw;
     font-family: Roboto;
-    font-size: 1.125vw;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 1.131vw;
+    line-height: 5.83vw;
     cursor: pointer;
 }
 
 .dropdown__button-direction::after {
     content: url(../../img/register-form/select.png);
     position: absolute;
-    top: 1.5vw;
+    top: 6vw;
     width: 1vw;
-    right: 1vw;
+    right: 6vw;
     transform: translateY(-50%);
     pointer-events: none;
     object-fit: cover;
@@ -1523,7 +1531,7 @@ html {
 .dropdown__list-direction {
     display: none;
     position: absolute;
-    top: 5.5vw;
+    top: 18vw;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -1545,14 +1553,20 @@ html {
 
 .dropdown__list-direction--visible {
     display: block;
+    width: 64.9vw;
 }
 
 .dropdown__list-item-direction {
     margin: 0px;
     padding: 0px;
     padding: 1vw;
+    color: #333333;
     z-index: 3;
+    width: 69.4vw;
     cursor: pointer;
+    span{
+        color: #333333;
+    }
 }
 
 .dropdown__list-item-direction:hover {
@@ -1568,14 +1582,14 @@ input {
     color: #333333;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
     .dropdown-sex {
         position: relative;
     }
     .dropdown__button-sex {
         position: relative;
         display: flex;
-        width: 12.5vw;
+        width: 13.5vw;
         text-align: left;
         background: white;
         gap: 0.625vw;
@@ -1612,7 +1626,7 @@ input {
         box-shadow: 0px 4px 8px grey;
         overflow: hidden;
         border-radius: 6px;
-        width: 12.5vw;
+        width: 13.5vw;
         z-index: 1;
     }
     .dropdown__list--visible {
@@ -1622,6 +1636,7 @@ input {
         margin: 0px;
         padding: 0px;
         padding: 1vw;
+        color: #333333;
         cursor: pointer;
     }
     .dropdown__list-item:hover {
@@ -1636,7 +1651,7 @@ input {
     .dropdown__button-direction {
         position: relative;
         display: flex;
-        width: vw;
+        width: 27.15vw;
         text-align: left;
         background: white;
         gap: 0.625vw;
@@ -1691,6 +1706,8 @@ input {
         margin: 0px;
         padding: 0px;
         padding: 1vw;
+        color: #333333;
+        width: auto;
         z-index: 3;
         cursor: pointer;
     }

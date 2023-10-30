@@ -69,6 +69,8 @@ const initPageLogica = () => {
             if (string !== '') {
                 dropDownButtonDirection.innerHTML = string
                 dropDownButtonDirection.classList.remove('validate')
+                alert.innerHTML = ''
+                console.log(alert.innerHTML)
             } else {
                 dropDownButtonDirection.innerHTML = 'Выберите курсы'
                 dropDownButtonDirection.classList.remove('picked')
