@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 .footer {
@@ -30,21 +29,28 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // gap: 1vw;
+    gap: 1vw;
 
-        :last-child {
-            display: flex;
-            color: #FFF;
-            text-align: right;
-            font-family: Roboto;
-            font-size: 1vw;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
+    :last-child {
+        margin: 0;
+        display: flex;
+        color: #FFF;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.footer__adress_mob {
+    display: none;
 }
 
 .footer__adress {
+    display: flex;
+    flex-direction: column;
     color: #FFF;
     font-family: Roboto;
     font-size: 1vw;
@@ -52,15 +58,17 @@
     font-weight: 400;
     line-height: normal;
     width: 21.8125vw;
+    gap: 1vw;
 
-        :last-child {
-        color: #FFF;
-        font-family: Roboto;
-        font-size: 1vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        }
+    :last-child {
+    margin: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
 }
 
 .footer__students {
@@ -73,11 +81,10 @@
 }
 
 .footer__image {
-    width: 13.75vw;
-    
+    width: 100%;
+
         img {
             width: 13.75vw;
-            height: 1.9048125vw;
         }
 }
 
@@ -87,16 +94,109 @@
     align-items: flex-start;
     gap: 0.75vw;
 
+    img {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 16.6666vw 5.5555vw;
+    background-color: #000037;
+    align-items: flex-start;
+    gap: 11.1111vw;
+}
+
+.footer__description {
+    display: flex;
+    flex-direction: column;
+    gap: 11.1111vw;
+    width: 88.8888vw;
+}
+
+.footer__phoneNumber {
+    width: 88.8888vw;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 7.7777vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 4.4444vw;
+
+    :last-child {
+        margin: 0;
+        width: 88.8888vw;
+        color: #FFF;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 4.4444vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.footer__adress {
+    display: none;
+}
+
+.footer__adress_mob {
+    width: 88.8888vw;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 4.4444vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 4.4444vw;
+
+    :last-child {
+        margin: 0;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 4.4444vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.footer__students {
+    width: 88.8888vw;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 4.4444vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__image {
+    width: 100%;
+
+
         img {
-            width: 1.5vw;
-            height: 1.5vw;
+    width: 61.112vw;
+
         }
 }
 
+.footer__icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.3333vw;
 
-@media screen and (max-width) {
-    
+    img {
+        width: 6.6666vw;
+        height: 6.6666vw;
+    }
 }
 
-
-
+}
