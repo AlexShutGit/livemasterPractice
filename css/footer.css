@@ -1,69 +1,76 @@
-footer {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.footer {
   display: flex;
-  max-width: 1920px;
-  width: 100%;
-  justify-content: center;
-  margin: 180px, 60px;
-  align-items: center;
   flex-direction: column;
-  gap: 60px;
-  background: #000038; }
-  footer .footer-top {
-    border-top: 1px solid #FFF;
+  width: 100vw;
+  padding: 3.75vw 11.25vw;
+  background-color: #000037;
+  align-items: center;
+  gap: 3.75vw; }
+
+.footer__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 77.5vw; }
+
+.footer__phoneNumber {
+  width: 15.4375vw;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1.75vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .footer__phoneNumber :last-child {
     display: flex;
-    padding-top: 60px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    text-align: center;
-    max-width: 1240px;
-    width: 100%; }
-    footer .footer-top .block {
-      justify-content: center;
-      display: inline-block;
-      margin-right: 100px;
-      text-align: center;
-      align-items: flex-start; }
-      footer .footer-top .block img {
-        padding-top: 20px; }
-      footer .footer-top .block .social {
-        margin-top: 20px;
-        margin-left: 40px;
-        align-items: flex-start;
-        flex-direction: row;
-        justify-content: center;
-        display: flex; }
-    footer .footer-top .icon {
-      display: block;
-      width: 28px;
-      height: 28px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain; }
-    footer .footer-top .vk {
-      background-image: url("../img/footer/VK.svg"); }
-    footer .footer-top .pin {
-      background-image: url("../img/footer/Pintrest.svg"); }
-    footer .footer-top .ok {
-      background-image: url("../img/footer/OK.svg"); }
-    footer .footer-top .youtube {
-      background-image: url("../img/footer/Youtube.svg"); }
-  footer h1 {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; }
-  footer p {
     color: #FFF;
     text-align: right;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal; }
-  footer .footer-bottom {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px; }
+
+.footer__adress {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 21.8125vw; }
+  .footer__adress :last-child {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; }
+
+.footer__students {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+
+.footer__image {
+  width: 13.75vw; }
+  .footer__image img {
+    width: 13.75vw;
+    height: 1.9048125vw; }
+
+.footer__icons {
+  width: 8.75vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75vw; }
+  .footer__icons img {
+    width: 1.5vw;
+    height: 1.5vw; }
