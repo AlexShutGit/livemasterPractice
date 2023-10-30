@@ -69,10 +69,8 @@
   font-weight: 400;
   line-height: normal; }
 
-.footer__image {
-  width: 100%; }
-  .footer__image img {
-    width: 13.75vw; }
+.footer__image img {
+  width: 13.75vw; }
 
 .footer__icons {
   width: 8.75vw;
