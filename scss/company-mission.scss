@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 html {
-    font-size: auto;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-    color: #333333;
+    font-size: 1vw;
 }
 
 .company-mission {
@@ -17,36 +9,33 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 40px 20px;
-    gap: 30px;
-
+    padding: 11.1vw 5.5vw;
+    gap: 8.3vw;
     .text {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        gap: 16px;
-        width: 320px;
+        gap: 4.4vw;
         h1 {
             font-family: Roboto;
-            font-size: 32px;
+            font-size: 8.8rem;
             font-weight: 600;
-            line-height: 38px;
+            line-height: 10.5vw;
             text-align: left;
         }
-
         p {
             font-family: Roboto;
-            font-size: 20px;
+            font-size: 5.5rem;
             font-weight: 400;
-            line-height: 23px;
+            line-height: 6.38vw;
             text-align: left;
         }
     }
     .image {
         img {
-            width: 320px;
-            height: 298px;
-            border-radius: 16px;
+            width: 88.8vw;
+            height: 82.7vw;
+            border-radius: 4.4vw;
             object-fit: cover;
         }
     }
@@ -56,19 +45,16 @@ html {
     html {
         font-size: 1vw;
     }
-
     .company-mission {
         flex-direction: row;
         padding: 5vw 11.25vw;
         gap: 2.5vw;
-
         .text {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
             gap: 1.25vw;
             width: 34.375vw;
-
             h1 {
                 font-family: Roboto;
                 font-size: 2.75rem;
@@ -76,7 +62,6 @@ html {
                 line-height: 3.2vw;
                 text-align: left;
             }
-
             p {
                 font-family: Roboto;
                 font-size: 1.75rem;
