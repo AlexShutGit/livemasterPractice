@@ -23,6 +23,22 @@ body {
         align-items: center;
         gap: 2.3vw;
         padding: 0vw 2vw;
+
+        .admin__header-input {
+            border-radius: 5px;
+            border: 1px solid white;
+            width: 19vw;
+            height: 2.5vw;
+            background: none;
+            background: url(../../img/select/search.svg) no-repeat left 0.8em center, none;
+            padding: 0px 2.5vw;
+            color: white;
+
+            &::placeholder{ color: white; }
+            &:focus { outline: none; }
+        }
+
+
     }
 
     .admin__main {
@@ -31,6 +47,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin-top: 1vw;
+        padding: 0vw 2vw;
 
         .admin__main-head {
             margin: 0px;
@@ -46,6 +63,7 @@ body {
             flex-direction: column;
             justify-content: center;
             width: 100%;
+            margin-bottom: 2vw;
 
             .admin__main-table-head {
                 display: flex;
@@ -62,37 +80,49 @@ body {
             .admin__main-table-col {
                 display: flex;
                 align-items: center;
-                background-color: #DFF6FE;
+                background-color: #FFFFFF;
                 width: 73.5vw;
                 justify-content: space-between;
                 font-weight: 200;
                 font-size: 1.1vw;
                 gap: 2.5vw;
-                height: 4vw;
+                height: 5vw;
 
+                .select-group {
+                    display: flex;
+                    align-items: center;
+
+                    .select-group-status {
+                        width: 0.6vw;
+                    }
+                }
+        
                 .select {
                 display: flex;
                 justify-content: center;
+                
       
                 .dropdown {
                     position: relative;
+                    display: flex;
+                    align-items: center;
                 }
 
                 .dropdown__button {
                 position: relative;
                 display: block;
-                width: 2.5vw;
+                width: 9.5vw;
                 text-align: left;
 
-                background: white;
+                background: none;
                 border: none;
                 border-radius: 6px;
-                height: 40px;
+                height: 2.5vw;
 
-                padding-right: 100px;
+                //padding-right: 100px;
 
-                font-weight: 400;
-                font-size: 16px;
+                font-weight: 200;
+                font-size: 1.1vw;
                 line-height: 20px;
 
                 cursor: pointer;
@@ -112,7 +142,7 @@ body {
                     display: none;
 
                     position: absolute;
-                    left: 75.78vw;
+                    left: 72.28vw;
                     top: auto;
 
                     margin: 0px;
@@ -124,7 +154,7 @@ body {
                     overflow: hidden;
 
                     border-radius: 6px;
-                    width: 6.5vw;
+                    width: 11.5vw;
 
                     z-index: 1;
                 }
@@ -148,8 +178,17 @@ body {
                 .dropdown__input-heddin {
                     display: none;
                 }
-}
+                }
 
+            }
+
+            .admin__main-table-col:nth-child(2n-1) {
+                background-color: #FAFAFA;
+                ;
+            }
+
+            .filtred {
+                display: none !important;
             }
 
             .fio {
@@ -169,10 +208,17 @@ body {
                 width: 13.2vw;
             }
 
+            .cours {
+                width: 6.5vw;
+            }
+
+
             .status {
-                width: 7.5vw;
+                width: 10.9vw;
                 margin-right: 2vw;
             }
         }
     }
+
+    
 }

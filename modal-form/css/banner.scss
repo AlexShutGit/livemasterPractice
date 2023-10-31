@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+html {
+    font-size: 1vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/banner/bg__banner_mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding: 19.4vw 5.5vw 22.2vw 5.5vw;
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 11.1vw;
+    justify-content: space-between;
+}
+
+.containerInfo__infoUSer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text__numbers {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 13.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text__info {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 6.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__age {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 8.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__numberWithAge {
+    display: flex;
+    align-items: baseline;
+}
+
+#text__info {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 6.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (min-width: 769px) {
+    .text__numbers {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .text__info {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .text__age {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .text__numberWithAge {
+        display: flex;
+        align-items: baseline;
+    }
+    #text__info {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        // gap: -4px;
+    }
+    .statistic {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // width: auto;
+        height: auto;
+        padding: 5vw 10vw;
+        background-image: url(../../img/banner/bg__banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .containerInfo {
+        // width: 103vw;
+        // height: 123px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        // justify-content: space-between;
+        gap: 7vw;
+        height: auto;
+    }
+    .containerInfo__infoUSer {
+        display: flex;
+        flex-direction: column;
+        width: 23vw;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        // margin-right: 4vw;
+    }
+    .text__numbers {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

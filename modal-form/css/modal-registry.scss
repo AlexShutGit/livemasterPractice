@@ -1,0 +1,729 @@
+
+
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 3;
+
+    .modal-active {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .modalWindow {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            // left: 5%;
+            width: 90vw;
+            // border-radius: 21px;
+            // overflow: hidden;
+        }
+
+        .register-form-modal {
+            background-image: url("../../img/register-form/background-mobile.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 16px;
+            border-radius: 4.4vw;
+            //gap: 11.1vw;
+
+            .register-application-modal {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 16px;
+
+                .register-application-modal-head {
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 400;
+                }
+
+                .form-modal {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 16px;
+                    border-radius: 4.4vw;
+                    gap: 24px;
+                    background-color: #ffffff;
+                }
+
+                .form-modal__data {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+
+                .name-block-modal {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                input {
+                    width: 74rem;
+                    display: flex;
+                    border-radius: 2.2vw;
+                    border: rgba(204, 204, 204, 1) 1px solid;
+                    padding: 10px;
+                   // gap: 2.7vw;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                   // line-height: 5.83vw;
+                    color: rgba(51, 51, 51, 1);
+                }
+
+                .alert-modal {
+                    color: rgba(210, 17, 17, 1);
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1vw;
+                    margin-top: 10px;
+                }
+
+                .number-sex-modal {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .sex-block-modal {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .dropddown-sex-modal {
+                        position: relative;
+
+                        .dropdown__button-sex-modal {
+                            position: relative;
+                            display: flex;
+                            width: 74vw;
+                            text-align: left;
+                            background: white;
+                            gap: 0.625vw;
+                            border: rgba(204, 204, 204, 1) 1px solid;
+                            border-radius: 2.2vw;
+                            //height: 12vw;
+                            align-items: center;
+                            color: #8b8b8b;
+                            padding: 10px;
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                            //line-height: 5.83vw;
+                            cursor: pointer;
+                        }
+
+                        .dropdown__button-sex-modal::after {
+                            content: url(../../img/register-form/select.png);
+                            position: absolute;
+                            top: 21px;
+                            width: 21px;
+                            right: 1vw;
+                            transform: translateY(-50%);
+                            pointer-events: none;
+                            object-fit: cover;
+                        }
+
+                        .dropdown__list-modal {
+                            display: none;
+                            position: absolute;
+                            top: 10.3vw;
+                            margin: 0px;
+                            padding: 0px;
+                            list-style-type: none;
+                            background: white;
+                            box-shadow: 0px 4px 8px grey;
+                            overflow: hidden;
+                            border-radius: 6px;
+                            width: 73.5vw;
+                            z-index: 1;
+                        }
+
+                        .dropdown__list-modal--visible {
+                            display: block;
+                        }
+                        
+                        .dropdown__list-modal-item {
+                            margin: 0px;
+                            padding: 0px;
+                            padding: 1vw;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                        
+                        .dropdown__list-modal-item:hover {
+                            background: rgb(231, 231, 231);
+                        }
+
+                       
+                    }
+                }
+
+                .number-block-modal {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .email-block-modal {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .form__direction-modal {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    // gap: 4vw;
+
+                    .form__direction-modal-head {
+                        font-size: 16px;
+                        color: black;
+                        position: relative;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                    }
+
+                    .dropdown__button-direction-modal {
+                        position: relative;
+                        display: flex;
+                        width: 74vw;
+                        text-align: left;
+                        background: white;
+                        //gap: 0.625vw;
+                        border: rgba(204, 204, 204, 1) 1px solid;
+                        border-radius: 2.3vw;
+                        //height: 12vw;
+                        align-items: center;
+                        color: #8b8b8b;
+                        padding: 10px;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        //line-height: 5.83vw;
+                        cursor: pointer;
+                    }
+
+                    .dropdown__button-direction-modal::after {
+                        content: url(../../img/register-form/select.png);
+                        position: absolute;
+                        top: 21px;
+                        width: 21px;
+                        right: 1vw;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                        object-fit: cover;
+                    }
+                    
+                    .dropdown__list-direction-modal {
+                        display: none;
+                        position: absolute;
+                        top: 71px;
+                        margin: 0px;
+                        padding: 0px;
+                        list-style-type: none;
+                        background: white;
+                        box-shadow: 0px 4px 8px grey;
+                        overflow: hidden;
+                        border-radius: 6px;
+                        width: 74vw;
+                        z-index: 3;
+                    }
+                    
+                    .dropdown__list-direction-modal--visible {
+                        display: block;
+                    }
+                    
+                    .dropdown__list-item-direction-modal {
+                       // display: none;
+                        margin: 0px;
+                        padding: 0px;
+                        padding: 1vw;
+                        z-index: 3;
+                        cursor: pointer;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 11px 20px;
+                    }
+                    
+                    .dropdown__list-item-direction-modal:hover {
+                        background: rgb(231, 231, 231);
+                    }
+                    
+                    #dropdown__input-direction-modal-heddin {
+                        display: none;
+                    }
+
+                    .input-direction {
+                        width: 4rem;
+                        display: flex;
+                        border-radius: 2.2vw;
+                        border: rgba(204, 204, 204, 1) 1px solid;
+                        padding: 10px;
+                    // gap: 2.7vw;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                    // line-height: 5.83vw;
+                        color: rgba(51, 51, 51, 1);
+                    }
+
+                }
+
+                .button-modal {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 2.2vw;
+                    padding: 12px;
+                   // gap: 2.7vw;
+                    background-color: rgba(31, 131, 249, 1);
+                    border: none;
+                    width: 74vw;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 500;
+                    //line-height: 5.27vw;
+                    color: #ffffff;
+                    transition: background-color 0.2s ease-in;
+                    &:hover {
+                        transition: background-color 0.2s ease-in;
+                        background: rgba(0, 93, 203, 1);
+                    }
+                }
+
+                .register-application-modal-paragraph {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 5.27vw;
+                    color: #ffffff;
+                }
+
+                .application-count-modal {
+                    display: none;
+                    // justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 6.6vw;
+
+                    .count-modal {
+                        background-color: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4.4vw;
+                        padding: 4.4vw;
+                        gap: 4.4vw;
+
+                        .blink-modal {
+                            font-family: Roboto;
+                            font-size: 8.8rem;
+                            font-weight: 600;
+                            line-height: 10.5vw;
+                            letter-spacing: 0em;
+                            color: #333333;
+                            animation: blink 2s linear infinite;
+                            /* Параметры анимации */
+                        }
+
+                        @keyframes blink-modal {
+                            0% {
+                                opacity: 1;
+                            }
+                            50% {
+                                opacity: 0.7;
+                            }
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .application-count-head {
+                        font-family: Roboto;
+                        font-size: 7.7rem;
+                        font-weight: 400;
+                        line-height: 9.16vw;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+
+    .modal-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 3;
+    
+        .modal-active {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            .modalWindow {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                // left: 5%;
+                width: 90vw;
+                // border-radius: 21px;
+                // overflow: hidden;
+            }
+    
+            .register-form-modal {
+                background-image: url("../../img/register-form/background-desktop.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: space-between;
+                //flex-direction: column;
+                align-items: start;
+                padding: 5vw 11.25vw 5vw 11.25vw;
+                border-radius: 4.4vw;
+                gap: 2.5vw;
+                height: 45vw;
+    
+                .register-application-modal {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    justify-content: start;
+                    gap: 2.5vw;
+                    width: 43.75vw;
+                    padding: 1.25vw 0vw;
+    
+                    .register-application-modal-head {
+                        color: white;
+                        font-family: Roboto;
+                        font-size: 3.75rem;
+                        font-weight: 400;
+                        line-height: 4.375vw;
+                    }
+    
+                    .form-modal {
+                        display: flex;
+                        position: absolute;
+                        right: -33.75vw;
+                        top: 0vw;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 2.5vw 2vw;
+                        border-radius: 1vw;
+                        gap: 1.5vw;
+                        background-color: #ffffff;
+                    }
+    
+                    .form-modal__data {
+                        // display: flex;
+                        // flex-direction: column;
+                        // gap: 12px;
+                    }
+    
+                    .name-block-modal {
+                        display: flex;
+                        flex-direction: column;
+                    }
+    
+                    input {
+                        width: 11vw;
+                        border-radius: 0.5vw;
+                        border: rgba(204, 204, 204, 1) 1px solid;
+                        padding: 0.75vw 1vw;
+                        gap: 0.625vw;
+                        font-family: Roboto;
+                        font-size: 1.125rem;
+                        font-weight: 400;
+                        line-height: 1.131vw;
+                    }
+    
+                    .alert-modal {
+                        color: rgba(210, 17, 17, 1);
+                        font-family: Roboto;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1vw;
+                        margin-top: 5px;
+                    }
+    
+                    .number-sex-modal {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1.5vw;
+    
+                        .sex-block-modal {
+                            display: flex;
+                            flex-direction: column;
+                        }
+    
+                        .dropddown-sex-modal {
+                            position: relative;
+    
+                            .dropdown__button-sex-modal {
+                                position: relative;
+                                display: flex;
+                                width: 12.5vw;
+                                text-align: left;
+                                background: white;
+                                gap: 0.625vw;
+                                border: rgba(204, 204, 204, 1) 1px solid;
+                                border-radius: 0.5vw;
+                                height: 3vw;
+                                align-items: center;
+                                color: #8b8b8b;
+                                padding: 0.75vw 1vw;
+                                font-family: Roboto;
+                                font-size: 1.125vw;
+                                font-weight: 400;
+                                line-height: 1.131vw;
+                                cursor: pointer;
+                            }
+    
+                            .dropdown__button-sex-modal::after {
+                                content: url(../../img/register-form/select.png);
+                                position: absolute;
+                                top: 1.5vw;
+                                width: 1vw;
+                                right: 1vw;
+                                transform: translateY(-50%);
+                                pointer-events: none;
+                                object-fit: cover;
+                            }
+    
+                            .dropdown__list-modal {
+                                display: none;
+                                position: absolute;
+                                top: 10.3vw;
+                                margin: 0px;
+                                padding: 0px;
+                                list-style-type: none;
+                                background: white;
+                                box-shadow: 0px 4px 8px grey;
+                                overflow: hidden;
+                                border-radius: 6px;
+                                width: 12.5vw;
+                                z-index: 1;
+                            }
+    
+                            .dropdown__list-modal--visible {
+                                display: block;
+                            }
+                            
+                            .dropdown__list-modal-item {
+                                margin: 0px;
+                                padding: 0px;
+                                padding: 1vw;
+                                cursor: pointer;
+                            }
+                            
+                            .dropdown__list-modal-item:hover {
+                                background: rgb(231, 231, 231);
+                            }
+                        }
+                    }
+    
+                    .number-block-modal {
+                        display: flex;
+                        flex-direction: column;
+                    }
+    
+                    .email-block-modal {
+                        display: flex;
+                        flex-direction: column;
+                    }
+    
+                    .form__direction-modal {
+                        position: relative;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        // gap: 4vw;
+    
+                        .form__direction-modal-head {
+                            font-size: 16px;
+                            color: black;
+                            position: relative;
+                            font-weight: 600;
+                            margin-bottom: 12px;
+                        }
+    
+                        .dropdown__button-direction-modal {
+                            position: relative;
+                            display: flex;
+                            // width: vw;
+                            text-align: left;
+                            background: white;
+                            gap: 0.625vw;
+                            border: rgba(204, 204, 204, 1) 1px solid;
+                            border-radius: 0.5vw;
+                            height: 3vw;
+                            align-items: center;
+                            color: #8b8b8b;
+                            padding: 0.75vw 1vw;
+                            font-family: Roboto;
+                            font-size: 1.125vw;
+                            font-weight: 400;
+                            line-height: 1.131vw;
+                            cursor: pointer;
+                        }
+    
+                        .dropdown__button-direction-modal::after {
+                            content: url(../../img/register-form/select.png);
+                            position: absolute;
+                            top: 1.5vw;
+                            width: 1vw;
+                            right: 1vw;
+                            transform: translateY(-50%);
+                            pointer-events: none;
+                            object-fit: cover;
+                        }
+                        
+
+                        .dropdown__list-direction-modal {
+                            display: none;
+                            position: absolute;
+                            top: 5.5vw;
+                            margin: 0px;
+                            padding: 0px;
+                            list-style-type: none;
+                            background: white;
+                            box-shadow: 0px 4px 8px grey;
+                            overflow: hidden;
+                            border-radius: 6px;
+                            width: 15.625vw;
+                            z-index: 3;
+                        }
+                        
+                        .dropdown__list-direction-modal--visible {
+                            display: block;
+                        }
+                        
+                        // .dropdown__list-item-direction-modal {
+                        //     display: none;
+                        //     margin: 0px;
+                        //     padding: 0px;
+                        //     padding: 1vw;
+                        //     z-index: 3;
+                        //     cursor: pointer;
+                        // }
+                        
+                        .dropdown__list-item-direction-modal:hover {
+                            background: rgb(231, 231, 231);
+                        }
+                        
+                        #dropdown__input-direction-modal-heddin {
+                            display: none;
+                        }
+    
+                    }
+    
+                    .button-modal {
+                        border-radius: 0.5vw;
+                        padding: 1.25vw 3.25vw;
+                        gap: 0.625vw;
+                        width: 27.15vw;
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        line-height: 1.465vw;
+                        &:hover {
+                            transition: background-color 0.2s ease-in;
+                            background: rgba(0, 93, 203, 1);
+                        }
+                    }
+    
+                    .register-application-modal-paragraph {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 5.27vw;
+                        color: #ffffff;
+                    }
+    
+                    .application-count-modal {
+                        display: none;
+                        // justify-content: space-between;
+                        align-items: center;
+                        flex-direction: row;
+                        gap: 6.6vw;
+    
+                        .count-modal {
+                            background-color: #ffffff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 4.4vw;
+                            padding: 4.4vw;
+                            gap: 4.4vw;
+    
+                            .blink-modal {
+                                font-family: Roboto;
+                                font-size: 8.8rem;
+                                font-weight: 600;
+                                line-height: 10.5vw;
+                                letter-spacing: 0em;
+                                color: #333333;
+                                animation: blink 2s linear infinite;
+                                /* Параметры анимации */
+                            }
+    
+                            @keyframes blink-modal {
+                                0% {
+                                    opacity: 1;
+                                }
+                                50% {
+                                    opacity: 0.7;
+                                }
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+    
+                        .application-count-head {
+                            font-family: Roboto;
+                            font-size: 7.7rem;
+                            font-weight: 400;
+                            line-height: 9.16vw;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ 
