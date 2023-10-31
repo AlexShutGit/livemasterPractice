@@ -325,7 +325,7 @@ const initPageLogic = () => {
                 dropDownButtonDirection.classList.remove('picked')
                 alert.innerHTML = 'Выберите хотя бы один курс'
                 dropDownButtonDirection.classList.add('validate')
-                    // alert
+                // alert
             }
             dropDownInputDirection.value = string
         })
@@ -346,6 +346,250 @@ const initPageLogic = () => {
             )
         }
     })
+
+    //-----------------------селекторы------------------//
+
+    const Selectors = () => {
+        const dropDownButton = document.querySelector('.dropdown__button-sex')
+        const dropDownButtonDirection = document.querySelector(
+            '.dropdown__button-direction'
+        )
+
+        const dropDownList = document.querySelector('.dropdown__list')
+        const dropDownListDirection = document.querySelector(
+            '.dropdown__list-direction'
+        )
+
+        const dropDownListItemsDirection =
+            dropDownListDirection.querySelectorAll(
+                '.dropdown__list-item-direction'
+            )
+        const dropDownListItems = dropDownList.querySelectorAll(
+            '.dropdown__list-item'
+        )
+
+        const dropDownInput = document.querySelector('.dropdown__input-heddin')
+        const dropDownInputDirection = document.querySelector(
+            '.dropdown__input-direction-heddin'
+        )
+
+        dropDownButton.addEventListener('click', (event) => {
+            event.preventDefault()
+            dropDownList.classList.toggle('dropdown__list--visible')
+        })
+
+        dropDownButtonDirection.addEventListener('click', (event) => {
+            event.preventDefault()
+            dropDownListDirection.classList.toggle(
+                'dropdown__list-direction--visible'
+            )
+        })
+
+        dropDownListItems.forEach((Item) => {
+            Item.addEventListener('click', (elem) => {
+                elem.stopPropagation()
+                dropDownButton.innerHTML = elem.target.innerText
+                dropDownButton.classList.add('picked')
+                dropDownInput.value = elem.target.dataset.value
+                dropDownList.classList.remove('dropdown__list--visible')
+            })
+        })
+        let courses = []
+        dropDownListItemsDirection.forEach((Item) => {
+            Item.addEventListener('click', (elem) => {
+                elem.stopPropagation()
+
+                const input = elem.currentTarget.querySelector('input')
+                const labelText =
+                    elem.currentTarget.querySelector('span').innerText
+                const alert =
+                    elem.currentTarget.offsetParent.offsetParent.querySelector(
+                        '.alert'
+                    )
+                if (elem.target !== input) input.checked = !input.checked
+
+                if (!courses.includes(labelText)) courses.push(labelText)
+                else courses = courses.filter((elem) => elem !== labelText)
+
+                if (
+                    dropDownButtonDirection.innerHTML.includes('Выберите курсы')
+                )
+                    dropDownButtonDirection.classList.add('picked')
+
+                let string = ''
+
+                courses.forEach((course) => {
+                    if (string === '') string = string.concat(course)
+                    else string = string.concat(', ' + course)
+                })
+
+                if (string !== '') {
+                    dropDownButtonDirection.textContent = string
+                    dropDownButtonDirection.classList.remove('validate')
+                    alert.innerHTML = ''
+                } else {
+                    dropDownButtonDirection.textContent = 'Выберите курсы'
+                    dropDownButtonDirection.classList.remove('picked')
+                    alert.innerHTML = 'Выберите хотя бы один курс'
+                    dropDownButtonDirection.classList.add('validate')
+                    // alert
+                }
+                dropDownInputDirection.value = string
+            })
+        })
+
+        // Click outside of dropdown - close dropdown
+
+        document.addEventListener('click', (elem) => {
+            if (elem.target !== dropDownButtonDirection) {
+                dropDownListDirection.classList.remove(
+                    'dropdown__list-direction--visible'
+                )
+            }
+        })
+        document.addEventListener('click', (elem) => {
+            if (elem.target !== dropDownButton) {
+                dropDownList.classList.remove('dropdown__list--visible')
+            }
+        })
+    }
+    //---------------валидация--------------------//
+
+    const ValidationModal = () => {
+        const validate = (input, alert, text, validate = true) => {
+            if (!validate) {
+                input.classList.add('validate')
+                alert.innerHTML = text
+            } else {
+                alert.innerHTML = ''
+                input.classList.remove('validate')
+            }
+        }
+
+        const validateName = (event) => {
+            const input = event.target
+            let alert = input.nextSibling.nextSibling
+
+            validate(input, alert, 'Заполните поле', input.value != '')
+        }
+
+        const nameInput = document.querySelector('.name-modal')
+        nameInput.addEventListener('blur', validateName)
+        nameInput.oninput = (event) => {
+            const name = event.target
+            const regex =
+                /[0-9-A-Za-z\!\@\#\$\%\^\&\*\(\)\_\-\+\=\{\}\"\:\;\.\/\>\<\?\'\,\[\]]|\./g
+
+            name.value = name.value.replace(regex, '')
+        }
+        nameInput.onpaste = (event) => event.preventDefault()
+
+        const numberValidate = (event) => {
+            const input = event.target
+            if (
+                event.inputType == 'deleteContentBackward' &&
+                input.value.length <= 3
+            ) {
+                input.value = ''
+                return
+            }
+            input.value = phoneMask(input.value)
+        }
+
+        const numberValidateCorrect = (event) => {
+            const input = event.target
+            let alert = input.nextSibling.nextSibling
+            const reg = /^\+?[7][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/
+            const valid = reg.test(phoneMask(input.value).replaceAll(' ', ''))
+
+            validate(input, alert, 'Заполните поле', valid)
+        }
+
+        const numberInput = document.querySelector('.number-modal')
+        numberInput.addEventListener('blur', numberValidateCorrect)
+        numberInput.addEventListener('input', numberValidate, false)
+        numberInput.addEventListener('keypress', (event) => {
+            if (event.which < 48 || event.which > 57) {
+                event.preventDefault()
+            }
+        })
+        numberInput.onpaste = (event) => event.preventDefault()
+
+        const phoneMask = (phone) => {
+            if (phone.startsWith('+7 ')) {
+                let number = phone.slice(3, phone.length)
+                return (
+                    '+7 ' +
+                    number.replace(
+                        /(\d{3})(\d{3})(\d{2})(\d{2})/,
+                        '($1) $2-$3-$4'
+                    )
+                )
+            }
+
+            return (phone =
+                '+7 ' +
+                phone.replace(
+                    /(\d{3})(\d{3})(\d{2})(\d{2})/,
+                    '+7($1) $2-$3-$4'
+                ))
+        }
+
+        const emailEvent = (event) => {
+            const input = event.target
+            const email = input.value
+            let alert = input.nextSibling.nextSibling
+            if (email == '') {
+                validate(input, alert, 'Заполните поле', emailValidate(email))
+            } else {
+                validate(
+                    input,
+                    alert,
+                    'Некорректные символы',
+                    emailValidate(email)
+                )
+            }
+        }
+
+        const emailInput = document.querySelector('.email-modal')
+        emailInput.addEventListener('blur', emailEvent)
+
+        const emailValidate = (email) => {
+            const regular = /\S+@\S+\.\S+/
+            return regular.test(email)
+        }
+
+        const dropDownButtonDirection = document.querySelector(
+            '.dropdown__button-direction'
+        )
+        const button = document.querySelector('.button-modal')
+
+        button.addEventListener('click', (event) => {
+            event.preventDefault()
+            button.classList.remove('animate')
+            const alert = event.target.offsetParent
+                .querySelector('.form__direction-modal')
+                .querySelector('.alert-modal')
+
+            numberInput.focus()
+            nameInput.focus()
+            emailInput.focus()
+            if (dropDownButtonDirection.innerHTML.includes('Выберите курсы'))
+                dropDownButtonDirection.classList.add('validate')
+            alert.innerHTML = 'Выберите хотя бы один курс'
+            button.focus()
+            nameInput.focus()
+
+            const validations = document.querySelectorAll('.validate')
+            if (validations.length) {
+                button.classList.add('animate')
+            } else {
+                button.classList.remove('animate')
+            }
+        })
+    }
+    Selectors()
+    ValidationModal()
 }
 
 document.addEventListener('DOMContentLoaded', initPageLogic, () => {
